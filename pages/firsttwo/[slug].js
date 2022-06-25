@@ -13,6 +13,7 @@ import "keen-slider/keen-slider.min.css";
 import KeenSlider from "keen-slider";
 import { useKeenSlider } from "keen-slider/react"; // import from 'keen-slider/react.es' for to get an ES module
 import CarouselComponent from "../../components/carousel";
+import Router from 'next/router'
 
 export const Post = ({ titleofproject, mainImagefirsttwo, images }) => {
   const [imageUrl, setImageUrl] = useState("");
@@ -115,9 +116,7 @@ export const Post = ({ titleofproject, mainImagefirsttwo, images }) => {
         {/* <div className={styles.loaderwrapper}>
     <span className={styles.loader}><span className={styles.loaderinner}> <img className={styles.figuren} src="https://i.ibb.co/PmNwYcP/mr-bean-checking-time.gif"/></span></span>
     </div> */}
-        <div className={styles.text}>
-          <h1 className={styles.title}>{titleofproject}</h1>
-        </div>
+        
 
         <div className={styles.editorialimages}>
           <div className={styles.wcontent}>
@@ -139,6 +138,16 @@ export const Post = ({ titleofproject, mainImagefirsttwo, images }) => {
                 </div>
               </div>
             </header>
+
+
+            <div className={styles.text}>
+          <h1 className={styles.title}>{titleofproject}</h1>
+          <h1 className={styles.titleback}>
+          <div onClick={() => Router.back()}> ← Back</div></h1>
+        </div>
+        {/* <div className={styles.text}>
+         
+        </div> */}
 
             {/* <div className={styles.text}>
                             <h1 className={styles.title} >{titleofproject}</h1>

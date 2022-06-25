@@ -225,6 +225,31 @@ margin: 0 2.5vw 0 calc(var(--s-320) + 2.5vw);
     font-weight: bold;
   }
 
+  .titleback{
+    --t-heading: 400 30px/1 "Druk", Helvetica, sans-serif;
+    text-transform: uppercase;
+    font: var(--t-heading);
+    font-size: 20px;
+    font-weight: bold;
+    transition-duration: 1s;
+  }
+
+  .titleback:hover{
+/* color: #1a1a1a; */
+/* transition-duration: 1s; */
+animation: 1s infinite blink;
+  }
+
+  @keyframes blink {
+    0%, 15% {
+        opacity: 0;
+    }
+    16%, 100% {
+        opacity: 1;
+    }
+}
+
+
 
   .mainImage {
     width: 60%;
