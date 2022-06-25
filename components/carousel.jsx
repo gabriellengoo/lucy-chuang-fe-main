@@ -41,7 +41,7 @@ const CarouselComponent = (images) => {
     });
 
   return (
-    <div style={{ width: "90%", height: "500px", margin: "0 auto" }}>
+    <div style={{ width: "80%", height: "500px", margin: "0 auto" }}>
       <Carousel
         slides={slides}
         goToSlide={goToSlide}
