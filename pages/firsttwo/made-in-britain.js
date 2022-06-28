@@ -37,7 +37,8 @@ export  const Post = () => {
               <title>Made In Britain</title>
               <meta name="description" content="Lucy Chuang portfolio" />
               {/* <link rel="icon" href="/favicon.ico" /> */}
-              <link rel="icon" href="https://i.ibb.co/9T4ft5j/logo.png" />
+              {/* <link rel="icon" href="https://i.ibb.co/9T4ft5j/logo.png" /> */}
+              <link rel="icon" href="/favicon.ico" />
               <script src="http://owlcarousel.owlgraphic.com/assets/vendors/jquery.mousewheel.min.js" defer></script>
               <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js" defer></script>
               <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" defer></script>

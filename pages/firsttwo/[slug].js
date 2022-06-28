@@ -64,8 +64,8 @@ export const Post = ({ titleofproject, mainImagefirsttwo, images }) => {
       <Head>
         <title>{titleofproject}</title>
         <meta name="description" content="Lucy Chuang portfolio" />
-        {/* <link rel="icon" href="/favicon.ico" /> */}
-        <link rel="icon" href="https://i.ibb.co/9T4ft5j/logo.png" />
+        <link rel="icon" href="/favicon.ico" />
+        {/* <link rel="icon" href="https://i.ibb.co/9T4ft5j/logo.png" /> */}
         <script
           src="http://owlcarousel.owlgraphic.com/assets/vendors/jquery.mousewheel.min.js"
           defer

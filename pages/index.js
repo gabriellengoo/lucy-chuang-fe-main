@@ -50,7 +50,8 @@ export default function Home({ posts }) {
       <Head>
         <title>Lucy Chuang</title>
         <meta name="description" content="Lucy Chuang portfolio" />
-        <link rel="icon" href="https://i.ibb.co/9T4ft5j/logo.png" />
+        {/* <link rel="icon" href="https://i.ibb.co/9T4ft5j/logo.png" /> */}
+        <link rel="icon" href="/favicon.ico" />
 
         <>
   <meta
