@@ -363,7 +363,9 @@
   left: 45vw;
   width: 50%;
   z-index: 500;
-  top: -715vh;
+  top: -725vh;
+  padding-top: 20px;
+  padding-bottom: 20px;
   text-decoration-thickness: 1px;
 }
 
@@ -401,6 +403,8 @@ text-decoration-thickness: 1px;
     left: 49%;
   text-decoration: underline;
   z-index: 400 !important;
+  padding-top: 20px;
+  padding-bottom: 20px;
   text-decoration-thickness: 1px;
 }
 

@@ -92,7 +92,7 @@ export default function Home({ posts }) {
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js" defer></script>
         <script src="locomotive-scroll.min.js" defer></script>
         <script  type="module" src="../assets/app.js" defer></script>
-        
+        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <noscript>
@@ -115,7 +115,7 @@ export default function Home({ posts }) {
 {/* blobs */}
 {/* <div className="mid" > 'overflow-hidden relative w-[140vw] opacity-95 */}
     <div className={styles.figuren}>
-    <img className={styles.figuren} src="https://i.ibb.co/JnRKs4M/foreground.png"/>
+    <img className={styles.figuren} src="https://i.ibb.co/Qmy29Fc/foreground-fixed.png"/>
     </div>
     {/* </div> */}
 
@@ -162,8 +162,8 @@ export default function Home({ posts }) {
 
 
 
-    <div className={styles.entropycont}><p className={styles.entropy}><Marquee>entropy entropy entropy entropy entropy entropy entropy
-     entropy entropy entropy entropy entropy entropy entropy </Marquee>
+    <div className={styles.entropycont}><p className={styles.entropy}><Marquee>   entropy entropy entropy entropy entropy entropy entropy
+       entropy entropy entropy entropy entropy entropy entropy   </Marquee>
     </p>
     </div>
 
@@ -304,7 +304,7 @@ export default function Home({ posts }) {
 </div>
 
             <div>
-                <p>Lucy Chuang 2022</p>
+                <p>Xinyu Chuang 2022</p>
                 <a href="https://www.instagram.com/is_this_gabrielle/" data-location="internal">© Created by the Internet Arcitect</a>
             </div>
       </footer> 

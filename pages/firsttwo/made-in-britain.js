@@ -12,7 +12,7 @@ import 'pure-react-carousel/dist/react-carousel.es.css';
 import 'keen-slider/keen-slider.min.css';
 import KeenSlider from 'keen-slider';
 import { useKeenSlider } from 'keen-slider/react' // import from 'keen-slider/react.es' for to get an ES module
-
+import SlideShow from 'react-image-show';
 
 export  const Post = () => {
   const [sliderRef] = useKeenSlider({
@@ -183,7 +183,16 @@ export  const Post = () => {
 
 
 
-
+    <SlideShow
+        images={urlArray}
+        width="920px"
+        imagesWidth="800px"
+        imagesHeight="450px"
+        imagesHeightMobile="56vw"
+        thumbnailsWidth="920px"
+        thumbnailsHeight="12vw"
+        indicators thumbnails fixedImagesHeight
+      />
 
 
 
