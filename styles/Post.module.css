@@ -1,4 +1,8 @@
+.imageContainer {
+  display:flex;
+  justify-content:center;
 
+}
 
 
 .spinner-wrapper{
@@ -584,7 +588,7 @@ margin: auto;
   flex: 1 0 50%;
   scroll-snap-align: center;
   /* margin: 2em; */
-  margin: 30px;
+  margin: 0px 20px;
   /* background-color: dodgerblue; */
 }
 
