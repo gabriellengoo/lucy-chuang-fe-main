@@ -6,7 +6,7 @@ import BlockContent from '@sanity/block-content-to-react';
 import Head from 'next/head';
 import React from 'react';
 import 'pure-react-carousel/dist/react-carousel.es.css';
-
+import Router from 'next/router'
 
 
 export  const Post = () => {
@@ -60,7 +60,12 @@ export  const Post = () => {
 
 
   
+                      <div className={styles.text}>
+          <h1 className={styles.titleback}>
+          <div onClick={() => Router.back()}> ← Back</div></h1>
+        </div>
 
+        
 {/* ----------------------------------------------------- here are the images   -----------------------------------------------------  */}
 
 {/* ----------------------- top images   -------------------------  */}
