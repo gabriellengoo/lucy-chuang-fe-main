@@ -9,6 +9,8 @@ import Marquee from "react-fast-marquee";
 import Link from 'next/link';
 // import Carousel from 'react-spring-3d-carousel';
 // firsttwo
+import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
+import { browserName, CustomView } from 'react-device-detect';
 
 export default function Home({ posts }) {
 
@@ -96,10 +98,21 @@ export default function Home({ posts }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+
+
+
+      <MobileView>
+  <h1>This is rendered only on mobile</h1>
+</MobileView>
+
+
+
       <noscript>
 		You need to enable JavaScript to run this site.
 	</noscript>
 
+
+  <BrowserView>
       {/* <img objectFit={"cover"} layout={"fill"} src="https://i.ibb.co/MfgWfH4/background-e.jpg" />  */}
   <main className={styles.main}>
 {/* BACK IMG */}
@@ -150,6 +163,7 @@ export default function Home({ posts }) {
     <div className={styles.logocont}>
     <img className={styles.logo} src="https://i.ibb.co/9T4ft5j/logo.png"/>
     </div>
+
     <div className={styles.logocont}>
     <img className={styles.logo2} src="https://i.ibb.co/9T4ft5j/logo.png"/>
     </div>
@@ -162,12 +176,26 @@ export default function Home({ posts }) {
     </div> */}
 
 
-
+<CustomView condition={browserName === "Chrome"}>
     <div className={styles.entropycont}><p className={styles.entropy}><Marquee>   entropy entropy entropy entropy entropy entropy entropy
        entropy entropy entropy entropy entropy entropy entropy   </Marquee>
     </p>
     </div>
+    </CustomView>
 
+    <CustomView condition={browserName === "Firefox"}>
+    <div className={styles.entropycontfire}><p className={styles.entropyfire}><Marquee>   entropy entropy entropy entropy entropy entropy entropy
+       entropy entropy entropy entropy entropy entropy entropy   </Marquee>
+    </p>
+    </div>
+    </CustomView>
+
+    <CustomView condition={browserName === "Safari"}>
+    <div className={styles.entropycontsaf}><p className={styles.entropy}><Marquee>   entropy entropy entropy entropy entropy entropy entropy
+       entropy entropy entropy entropy entropy entropy entropy   </Marquee>
+    </p>
+    </div>
+    </CustomView>
 
    
  </div>
@@ -184,9 +212,9 @@ export default function Home({ posts }) {
         {/* <h1 className={styles.entropyraw}>Raw Reality</h1> */}
         {/* BACK IMG */}
 
-              <div className={styles.test3}></div>
             {/* <div className={styles.test4}></div> */}
-
+            <CustomView condition={browserName === "Chrome"}>
+            <div className={styles.test3}></div>
         <div className={styles.wrapper}>
                   {mappedPosts.length ? mappedPosts.map((p, id) => (
                             <div onClick={() => router.push(`/firsttwo/${p.slug.current}`)} key={id}>
@@ -197,19 +225,24 @@ export default function Home({ posts }) {
                             // </div> 
                           )) : <>No Posts Yet</>}
 
-<img className={styles.flower1n} src="https://i.ibb.co/yyX4PqP/3.png"/>
+
+
+                  <img className={styles.flower1n} src="https://i.ibb.co/yyX4PqP/3.png"/>
                   <img className={styles.man} src="https://i.ibb.co/1Jq6bnP/5.png"/>
 
 
 
-     <div className={styles.hscrollcont}>
-                  {/* <div className={styles.hscroll}> */}
+              <div className={styles.hscrollcont}>
                         <div className='hscroll'>
                                 <img className={styles.flyingimg} src="https://i.ibb.co/hLScpnh/13-1-1.png"/>
                                 <p><span className={styles.titleofprojecthottest}>Hottest In Da Metaverse</span></p>
-                        {/* </div>  */}
                         </div> 
-                  </div>
+              </div>
+
+
+
+  
+
 
                   <div className={styles.videocont}>
                         {/* <iframe className={styles.video} src="https://drive.google.com/file/d/14w2FfWc-LfdUSPoM79y06_sdVXXG_QXa/preview?start=1"></iframe> */}
@@ -218,7 +251,7 @@ export default function Home({ posts }) {
                                   <iframe src="https://player.vimeo.com/video/721799699?h=b659979974?background=1&amp;autoplay=1&amp;muted=1&amp;loop=1&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameBorder="0" className={styles.video} allow="autoplay; fullscreen; picture-in-picture; loop=1; muted=1" id="video" muted webkitallowfullscreen mozallowfullscreen allowFullScreen title="fixed metaverse"></iframe>            
                                   {/* <div class="plyr__captions"></div> */}
                               {/* </div> */}
-                        </div>
+                   </div>
 
 
                   <div className={styles.botflowercont}>
@@ -235,7 +268,129 @@ export default function Home({ posts }) {
                    
 
         </div> 
+        </CustomView>
 
+        <CustomView condition={browserName === "Firefox"}>
+        <div className={styles.test3fire}></div>
+        <div className={styles.wrapperfire}>
+                  {mappedPosts.length ? mappedPosts.map((p, id) => (
+                            <div onClick={() => router.push(`/firsttwo/${p.slug.current}`)} key={id}>
+                                      {/* <div className={styles.containerproject2}> */}
+                                        <img  className={styles.mainImage2} src={p.mainImagefirsttwo} />
+                                        <p className={styles.titleofprojectsn2}>{p.titleofproject}</p>
+                            </div>
+                            // </div> 
+                          )) : <>No Posts Yet</>}
+
+
+
+                  <img className={styles.flower1n} src="https://i.ibb.co/yyX4PqP/3.png"/>
+                  <img className={styles.man} src="https://i.ibb.co/1Jq6bnP/5.png"/>
+
+
+
+              <div className={styles.hscrollcont}>
+                  {/* <div className={styles.hscroll}> */}
+                        <div className='hscroll'>
+                                <img className={styles.flyingimg} src="https://i.ibb.co/hLScpnh/13-1-1.png"/>
+                                <p><span className={styles.titleofprojecthottest}>Hottest In Da Metaverse</span></p>
+                        {/* </div>  */}
+                        </div> 
+              </div>
+
+
+
+  
+
+
+                  <div className={styles.videocont}>
+                        {/* <iframe className={styles.video} src="https://drive.google.com/file/d/14w2FfWc-LfdUSPoM79y06_sdVXXG_QXa/preview?start=1"></iframe> */}
+                        {/* style="transform: translateY(-38.2813%);" style="position:absolute;top:0;left:0;width:100%;height:100%;" */}
+                        {/* <div class="video-wrapper"><div class="plyr__video-embed__container" > */}
+                                  <iframe src="https://player.vimeo.com/video/721799699?h=b659979974?background=1&amp;autoplay=1&amp;muted=1&amp;loop=1&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameBorder="0" className={styles.video} allow="autoplay; fullscreen; picture-in-picture; loop=1; muted=1" id="video" muted webkitallowfullscreen mozallowfullscreen allowFullScreen title="fixed metaverse"></iframe>            
+                                  {/* <div class="plyr__captions"></div> */}
+                              {/* </div> */}
+                   </div>
+
+
+                  <div className={styles.botflowercontfire}>
+                  <img className={styles.botflower} src="https://i.ibb.co/TDXZH4y/1-2.png"/>
+                  </div>
+
+
+                  <img className={styles.flowergreen} src="https://i.ibb.co/xzd0Kz4/9.png"/>
+                 
+             
+
+
+
+                   
+
+        </div> 
+
+      </CustomView>
+
+      <CustomView condition={browserName === "Safari"}>
+      <div className={styles.test3saf}></div>
+        <div className={styles.wrappersafari}>
+                  {mappedPosts.length ? mappedPosts.map((p, id) => (
+                            <div onClick={() => router.push(`/firsttwo/${p.slug.current}`)} key={id}>
+                                      {/* <div className={styles.containerproject2}> */}
+                                        <img  className={styles.mainImage2} src={p.mainImagefirsttwo} />
+                                        <p className={styles.titleofprojectsn2}>{p.titleofproject}</p>
+                            </div>
+                            // </div> 
+                          )) : <>No Posts Yet</>}
+
+
+
+                  <img className={styles.flower1nsaf} src="https://i.ibb.co/yyX4PqP/3.png"/>
+                  <img className={styles.man} src="https://i.ibb.co/1Jq6bnP/5.png"/>
+
+
+
+              <div className={styles.hscrollcont}>
+                        <div className='hscroll'>
+                                <img className={styles.flyingimg} src="https://i.ibb.co/hLScpnh/13-1-1.png"/>
+                                <p><span className={styles.titleofprojecthottest}>Hottest In Da Metaverse</span></p>
+                        </div> 
+              </div>
+
+
+
+  
+
+
+                  <div className={styles.videocont}>
+                        {/* <iframe className={styles.video} src="https://drive.google.com/file/d/14w2FfWc-LfdUSPoM79y06_sdVXXG_QXa/preview?start=1"></iframe> */}
+                        {/* style="transform: translateY(-38.2813%);" style="position:absolute;top:0;left:0;width:100%;height:100%;" */}
+                        {/* <div class="video-wrapper"><div class="plyr__video-embed__container" > */}
+                                  <iframe src="https://player.vimeo.com/video/721799699?h=b659979974?background=1&amp;autoplay=1&amp;muted=1&amp;loop=1&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameBorder="0" className={styles.video} allow="autoplay; fullscreen; picture-in-picture; loop=1; muted=1" id="video" muted webkitallowfullscreen mozallowfullscreen allowFullScreen title="fixed metaverse"></iframe>            
+                                  {/* <div class="plyr__captions"></div> */}
+                              {/* </div> */}
+                   </div>
+
+
+                  <div className={styles.botflowercontsaf}>
+                  <img className={styles.botflower} src="https://i.ibb.co/TDXZH4y/1-2.png"/>
+                  </div>
+
+
+                  <img className={styles.flowergreensaf} src="https://i.ibb.co/xzd0Kz4/9.png"/>
+                 
+             
+
+
+
+                   
+
+        </div> 
+
+      </CustomView>
+
+
+
+      
     </div>
 </section>
 
@@ -314,7 +469,7 @@ export default function Home({ posts }) {
 
 
   </main>
-
+  </BrowserView>
 
       {/* <footer className={styles.footer}>
 
