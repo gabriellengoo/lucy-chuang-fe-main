@@ -93,7 +93,7 @@ export default function Home({ posts }) {
         <script src=" https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TimelineMax.min.js" defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js" defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js" defer></script>
-        <script src="locomotive-scroll.min.js" defer></script>
+        {/* <script src="locomotive-scroll.min.js" defer></script> */}
         <script  type="module" src="../assets/app.js" defer></script>
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -102,14 +102,169 @@ export default function Home({ posts }) {
 
 
       <MobileView>
-  <h1>This is rendered only on mobile</h1>
+  {/* <h1>This is rendered only on mobile</h1> */}
+
+    {/* <img objectFit={"cover"} layout={"fill"} src="https://i.ibb.co/MfgWfH4/background-e.jpg" />  */}
+{/* BACK IMG */}
+<div className='overflow-hidden'>
+      {/* <div className={styles.test}></div> */}
+      </div>
+{/* BACK IMG */}
+{/* <div className='overflow-hidden'>
+      <div className={styles.test2}></div></div> */}
+      {/* BACK IMG */}
+{/* <div className='overflow-hidden'>
+      <div className={styles.test3}></div></div> */}
+
+{/* blobs */}
+{/* <div className="mid" > 'overflow-hidden relative w-[140vw] opacity-95 */}
+    <div className={styles.figurenmobile }>
+    <img className={styles.figurenmobile } src="https://i.ibb.co/Qmy29Fc/foreground-fixed.png"/>
+    </div>
+    {/* </div> */}
+
+
+  
+
+
+
+
+
+
+{/* everything */}
+
+
+       {/* <h1 className=' text-9xl text-[white]'>Home</h1> */}
+       {/* className=' pb-5 text-5xl  text-[white]' */}
+       <section className={styles.section} > 
+       {/* <div className="intro"> */}
+  <div className={styles.content}>
+
+    {/* <div className={styles.logocontmob}>
+    <img className={styles.logo} src="https://i.ibb.co/9T4ft5j/logo.png"/>
+    </div> */}
+
+    <div className={styles.logocont}>
+    <img className={styles.logo2moblie} src="https://i.ibb.co/9T4ft5j/logo.png"/>
+    </div>
+
+
+    <img className={styles.bigimgnmobile} src="https://i.ibb.co/Y3s7XSH/entropy-link.png"/>
+
+
+
+
+    <div className={styles.entropycontmobile}><p className={styles.entropy}><Marquee>   entropy entropy entropy entropy entropy entropy entropy
+       entropy entropy entropy entropy entropy entropy entropy   </Marquee>
+    </p>
+    </div>
+
+   
+ </div>
+ {/* </div>  */}
+</section>
+
+
+
+
+
+<section className={styles.section}>  
+    <div className={styles.content}>
+            <div className={styles.test3mobile}></div>
+        <div className={styles.wrappermobile}>
+                  {mappedPosts.length ? mappedPosts.map((p, id) => (
+                            <div onClick={() => router.push(`/firsttwo/${p.slug.current}`)} key={id} className={styles.post}>
+                                      {/* <div className={styles.containerproject2}> */}
+                                        <img  className={styles.mainImage2} src={p.mainImagefirsttwo} />
+                                        <p className={styles.titleofprojectsn2mobile} >{p.titleofproject}</p>
+                            </div>
+                            // </div> 
+                          )) : <>No Posts Yet</>}
+
+
+
+                  {/* <img className={styles.flower1n} src="https://i.ibb.co/yyX4PqP/3.png"/>
+                  <img className={styles.man} src="https://i.ibb.co/1Jq6bnP/5.png"/> */}
+
+
+
+              <div className={styles.hscrollcont}>
+                        <div className='hscroll'>
+                                {/* <img className={styles.flyingimg} src="https://i.ibb.co/hLScpnh/13-1-1.png"/> */}
+                                <p><span className={styles.titleofprojecthottest}>Hottest In Da Metaverse</span></p>
+                        </div> 
+              </div>
+
+
+
+  
+
+
+                  <div className={styles.videocontmobile}>
+                                  <iframe src="https://player.vimeo.com/video/721799699?h=b659979974?background=1&amp;autoplay=1&amp;muted=1&amp;loop=1&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameBorder="0" className={styles.video} allow="autoplay; fullscreen; picture-in-picture; loop=1; muted=1" id="video" muted webkitallowfullscreen mozallowfullscreen allowFullScreen title="fixed metaverse"></iframe>            
+                   </div>
+
+
+                  {/* <div className={styles.botflowercont}>
+                  <img className={styles.botflower} src="https://i.ibb.co/TDXZH4y/1-2.png"/>
+                  </div>
+
+
+                  <img className={styles.flowergreen} src="https://i.ibb.co/xzd0Kz4/9.png"/>
+                  */}
+             
+
+
+
+
+
+      
+                   
+
+        </div> 
+
+        
+    </div>
+
+
+</section>
+
+<footer className={styles.footermobile}>
+
+
+{/* <div className="inline-grid grid-cols-2">
+  <p className=' '>Archive</p>
+  <div className="">
+    <ul className="list-none font-light text-left" >
+    <p className=' text-left '>Contact me :)</p>
+      <li>xinyu.c.contact@gmail.com</li>
+      <a href="https://www.instagram.com/chuangxyyy/" data-location="internal">Instagram</a>
+    </ul>
+  </div>
+</div> */}
+
+            <div>
+   
+            {/* <ul className="list-none " > */}
+    <p className='  '>Contact me :)</p>
+      <p>xinyu.c.contact@gmail.com</p>
+      <a href="https://www.instagram.com/chuangxyyy/" data-location="internal">Instagram</a>
+    {/* </ul> */}
+    <p className=' pt-10 '>Archive</p>
+                <p>Xinyu Chuang 2022</p>
+                <a href="https://www.instagram.com/is_this_gabrielle/" data-location="internal">© Created by the Internet Arcitect</a>
+            </div>
+      </footer> 
+
+
+
 </MobileView>
 
 
 
-      <noscript>
+      {/* <noscript>
 		You need to enable JavaScript to run this site.
-	</noscript>
+	</noscript> */}
 
 
   <BrowserView>
@@ -137,17 +292,7 @@ export default function Home({ posts }) {
   
 
 
-    {/* <div className={styles.container}>
-  <div id="item0" className={styles.item}>A</div>
-  <div id="item1" className={styles.item}>B</div>
-</div> */}
 
-{/* <div className="container">
-  <div>OUR STORY</div>
-  <div className="hscroll">
-    Lorem ipsum dolor sit amet
-  </div>  
-</div> */}
 
 
 
