@@ -175,7 +175,7 @@
   left: -15vw; */
   /* width: 100vw; */
   height: 100vh;
-  z-index: 100;
+  z-index: -50;
   /* -webkit-animation: spin 20s ease-in-out infinite;
   animation: spin 20s ease-in-out infinite; */
   /* animation: glitter 5s infinite; */
@@ -1064,6 +1064,25 @@ position:relative;
   width: 40%;
   position: fixed;
   top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+/* top: -10; */
+/* position:relative; */
+  /* left: 5%; */
+  /* transform: translate(-50%, -50%); */
+  /* overflow: hidden; */
+  -webkit-filter: drop-shadow(0rem 0rem .5rem rgb(255, 255, 255));
+          filter: drop-shadow(0rem 0rem .5rem rgb(255, 255, 255));
+}
+
+.logomoblie{
+  /* position:absolute; */
+  z-index: 1 !important;
+  width: 40%;
+  position: fixed;
+  top: 10%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
@@ -2600,22 +2619,6 @@ text-decoration-thickness: 1px;
   text-underline-offset: .5rem;
 }
 
-.post {
-  /* margin: 25px;
-  width: 500px;
-  height: 316px; */
-  cursor: pointer;
-  text-align: center;
-  /* max-width: calc(100vw - 50px); */
-  width: 100vw;
-}
-.mainImage {
-  /* width: 500px; */
-  transition: 0.2s;
-  border-radius: 5px;
-  /* max-width: calc(100vw - 50px); */
-  box-shadow: 0px 0px 2px black;
-}
 
 .titleofprojectsn2mobile{
   position: relative;
@@ -2698,4 +2701,67 @@ mix-blend-mode: exclusion;
     color: white;
     /* padding-top: 50vh; */
     z-index: 400;
+  }
+
+
+  .main h1, .main h3 {
+    text-align: center;
+  }
+  .feed {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    z-index: 100;
+  }
+  .post {
+    margin: 25px;
+    width: 500px;
+    /* height: 316px; */
+    cursor: pointer;
+    text-align: center;
+    max-width: calc(100vw - 50px);
+  }
+  .mainImage {
+    width: 500px;
+    transition: 0.2s;
+    border-radius: 5px;
+    max-width: calc(100vw - 50px);
+    /* box-shadow: 0px 0px 2px black; */
+  }
+  .post:hover .mainImage {
+    width: 490px;
+    transition: 0.2s;
+  }
+
+
+  .titleofprojectsmobile{
+    position: relative;
+    /* -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); */
+    /* line-height: 36px; */
+  font-weight: 300;
+  color: #ffffff;
+  /* font-family: serif; */
+  font-style: italic;
+  text-decoration: underline;
+  /* font-size: 67px; */
+  top: 0vh;
+  z-index: 100;
+  left: 0vw;
+  mix-blend-mode: exclusion;
+  
+  }
+
+
+
+  .titleofprojectscont{
+     /* width:100vw;  */
+  height:10vh; 
+  position:relative; 
+  /* left:-10vh;  */
+  /* top:40vh;      */
+  /* top: -15vh; */
+  /* z-index:-1; */
+  pointer-events: none;
   }

@@ -12,27 +12,26 @@
 
 
 
+{/* <CustomView condition={browserName === "Chrome"}> */}
+
+gsap.registerPlugin(ScrollTrigger);
 
 
 
 
-
-
-
-
-
+  
 gsap.to('.hscroll', {
   xPercent: -250,
   ease: "none",
   scrollTrigger: {
     trigger: ".hscroll",
-    start: "top bottom",
-    end: "bottom top",
+    start: "top 75%",
+    end: "bottom 25%",
     scrub: true
   }
 })
 
-
+// </CustomView>
 
 
 
