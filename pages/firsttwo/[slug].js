@@ -13,7 +13,9 @@ import "keen-slider/keen-slider.min.css";
 import KeenSlider from "keen-slider";
 import { useKeenSlider } from "keen-slider/react"; // import from 'keen-slider/react.es' for to get an ES module
 import CarouselComponent from "../../components/carousel";
+import CarouselComponentmobile from "../../components/carouselmobile";
 import Router from 'next/router'
+import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
 
 export const Post = ({ titleofproject, mainImagefirsttwo, images }) => {
   const [imageUrl, setImageUrl] = useState("");
@@ -60,7 +62,8 @@ export const Post = ({ titleofproject, mainImagefirsttwo, images }) => {
   }, [mainImagefirsttwo]);
 
   return (
-    <div className={styles.main}>
+
+ <div>
       <Head>
         <title>{titleofproject}</title>
         <meta name="description" content="XINYU Chuang portfolio" />
@@ -108,10 +111,15 @@ export const Post = ({ titleofproject, mainImagefirsttwo, images }) => {
 
       <noscript>You need to enable JavaScript to run this site.</noscript>
 
+
+  
+
+      
       {/* <div className={styles.spinner-wrapper}>
 <img className={styles.flyingimg} src="https://i.ibb.co/hLScpnh/13-1-1.png"/>
 </div> */}
-
+<BrowserView> 
+   <div className={styles.main}>
       <div className={styles.maininterior}>
         {/* <div className={styles.loaderwrapper}>
     <span className={styles.loader}><span className={styles.loaderinner}> <img className={styles.figuren} src="https://i.ibb.co/PmNwYcP/mr-bean-checking-time.gif"/></span></span>
@@ -178,12 +186,110 @@ export const Post = ({ titleofproject, mainImagefirsttwo, images }) => {
                       </span>
 
                   </div> */}
+         
             <CarouselComponent images={images} />
+         
+
             {/* </div> */}
           </div>
         </div>
       </div>
+  
     </div>
+    </BrowserView>
+ 
+      
+      
+      <MobileView>
+
+      <div className={styles.mainmobile}>
+      <div className={styles.maininterior}>
+        {/* <div className={styles.loaderwrapper}>
+    <span className={styles.loader}><span className={styles.loaderinner}> <img className={styles.figuren} src="https://i.ibb.co/PmNwYcP/mr-bean-checking-time.gif"/></span></span>
+    </div> */}
+        
+
+        <div className={styles.editorialimages}>
+          <div className={styles.wcontent}>
+            <header className={styles.header}>
+              <div className={styles.tlabel}>
+                <div className={styles.headeredition}>
+                  <a href="../" data-location="internal">
+                    2022 XINYU CHUANG 
+                  </a>
+                </div>
+                <div>__</div>
+                {/* <div className={styles.headertime}> 06:20:22</div> */}
+                <div className={styles.headertime}>
+                  <div></div>
+                        <div id="Date"></div>
+                      <ul className={styles.ul}>
+                          <li id="hours"></li>
+                          <li id="point">:</li>
+                          <li id="min"></li>
+                          <li id="point">:</li>
+                          <li id="sec"></li>
+                      </ul> 
+                    <div></div>
+                </div>
+                {/* <div className={styles.headertime} id="current_dateandtime"> ..d</div> */}
+
+                  {/* <div className={styles.wrap}>               */}
+                        <div id="header-customer">
+                          <a
+                            href="https://www.instagram.com/is_this_gabrielle/"
+                            data-location="internal"
+                          >
+                            © Created by the Internet Arcitect
+                          </a>
+                        </div>
+                  {/* </div> */}
+              </div>  
+            </header>
+
+
+            <div className={styles.text}>
+          <h1 className={styles.title}>{titleofproject}</h1>
+          <h1 className={styles.titleback}>
+          <div onClick={() => Router.back()}> ← Back</div></h1>
+        </div>
+        {/* <div className={styles.text}>
+         
+        </div> */}
+
+            {/* <div className={styles.text}>
+                            <h1 className={styles.title} >{titleofproject}</h1>
+                      <div className={styles.bodyofproject}>
+                        <BlockContent blocks={bodyofproject} />
+                      </div>
+
+                      <div className={styles.tlabel}></div>
+
+                      <span className={styles.objectcontain}>
+                      </span>
+
+                  </div> */}
+         
+         <div className={styles.subimagessection}>
+         {images.map(({ _key, asset }, image) => (
+      <Image key={_key} identifier="images" className={styles.imagegallery} image={asset} />
+      ))}
+         </div>
+
+            {/* </div> */}
+          </div>
+        </div>
+      </div>
+  
+    </div>
+    
+      </MobileView>
+
+
+
+
+
+</div>
   );
 };
 

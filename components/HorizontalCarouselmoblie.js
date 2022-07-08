@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Arrow from "../components/Arrow";
+import Arrow from "./Arrow";
 
 const styles = {
   imageContainer: {
@@ -8,10 +8,11 @@ const styles = {
   },
   item: {
     margin: "0px 20px",
-    width: "30vw",
+    // width: "80vw",
+    // height: "25vh",
   },
 };
-const HorizontalCarousel = (props) => {
+const HorizontalCarouselmobile = (props) => {
   const [top, setTop] = useState(0);
   const [middle, setMiddle] = useState(0);
   const [bottom, setBottom] = useState(0);
@@ -34,7 +35,7 @@ const HorizontalCarousel = (props) => {
   return (
     <div>
       {/* // ----------------------- top images ------------------------- */}
-      <div style={{ ...styles.imageContainer, aspectRatio: "1 / 0.08" }}>
+      <div style={{ ...styles.imageContainer, aspectRatio: ".5 / 0.08" }}>
         <Arrow
           direction='left'
           onClick={() => {
@@ -53,7 +54,7 @@ const HorizontalCarousel = (props) => {
         />
       </div>
       {/* // ----------------------- middle images ------------------------- */}
-      <div style={{ ...styles.imageContainer, aspectRatio: "1 / 0.13" }}>
+      <div style={{ ...styles.imageContainer, aspectRatio: ".5 / 0.13" }}>
         <Arrow
           direction='left'
           onClick={() => {
@@ -73,7 +74,7 @@ const HorizontalCarousel = (props) => {
         />
       </div>
       {/* ----------------------- bottom images ------------------------- */}
-      <div style={{ ...styles.imageContainer, aspectRatio: "1/0.21" }}>
+      <div style={{ ...styles.imageContainer, aspectRatio: ".5/0.21" }}>
         <Arrow
           direction='left'
           onClick={() => {
@@ -96,4 +97,4 @@ const HorizontalCarousel = (props) => {
   );
 };
 
-export default HorizontalCarousel;
+export default HorizontalCarouselmobile;

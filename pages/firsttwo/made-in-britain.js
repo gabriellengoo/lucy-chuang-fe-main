@@ -4,10 +4,13 @@ import React from "react";
 import "pure-react-carousel/dist/react-carousel.es.css";
 import Router from "next/router";
 import HorizontalCarousel from "../../components/HorizontalCarousel";
+import HorizontalCarouselmobile from "../../components/HorizontalCarouselmoblie";
+import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
+
 
 export const Post = () => {
   return (
-    <div className={styles.main}>
+    <div>
       <Head>
         <title>Made In Britain</title>
         <meta name="description" content="XINYU Chuang portfolio" />
@@ -57,6 +60,11 @@ export const Post = () => {
 
         <script src="../../assets/app.js" defer></script>
       </Head>
+
+
+
+      <BrowserView> 
+         <div className={styles.main}>
       <header className={styles.header}>
         <div className={styles.tlabel}>
           <div className={styles.headeredition}>
@@ -99,7 +107,61 @@ export const Post = () => {
       {/* ----------------------------------------------------- here are the images   -----------------------------------------------------  */}
       <HorizontalCarousel />
 
+      </div>
+      </BrowserView> 
 
+
+
+
+
+
+      <MobileView>  
+      <div className={styles.main}>
+      <header className={styles.header}>
+        <div className={styles.tlabel}>
+          <div className={styles.headeredition}>
+            <a href="../" data-location="internal">
+              2022 XINYU CHUANG
+            </a>
+          </div>
+          <div>__</div>
+                {/* <div className={styles.headertime}> 06:20:22</div> */}
+                <div className={styles.headertime}>
+                  <div></div>
+                        <div id="Date"></div>
+                      <ul className={styles.ul}>
+                          <li id="hours"></li>
+                          <li id="point">:</li>
+                          <li id="min"></li>
+                          <li id="point">:</li>
+                          <li id="sec"></li>
+                      </ul>
+                    <div></div>
+                </div>
+          <div id="header-customer">
+            <a
+              href="https://www.instagram.com/is_this_gabrielle/"
+              data-location="internal"
+            >
+              © Created by the Internet Arcitect
+            </a>
+          </div>
+        </div>
+      </header>
+      <div className={styles.text}>
+        <h1 className={styles.titleback}>
+          <div onClick={() => Router.back()}> ← Back</div>
+        </h1>
+      </div>
+
+
+
+      {/* ----------------------------------------------------- here are the images   -----------------------------------------------------  */}
+      <HorizontalCarouselmobile />
+
+      </div>
+      </MobileView>
+   
     </div>
   );
 };

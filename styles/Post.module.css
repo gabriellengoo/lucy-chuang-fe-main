@@ -126,10 +126,49 @@ background-color: black;
     margin: 0 2.5vw 0 calc(var(--s-320) + 2.5vw); */
   }
 
+
+  .mainmobile{
+    color:rgb(255, 255, 255);
+    position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+  /* overflow-y: scroll; */
+  /* overflow: hidden; */
+  -webkit-overflow-scrolling: none;
+  z-index: 5;
+  background-color: black;
+  
+  }
+
   .maininterior{
     overflow: hidden;
     position: relative;
  
+  }
+
+
+
+  .subimagessection div{
+    width: 90vw;
+    padding: 20px;
+  }
+
+  .subimagessection{
+    overflow: hidden;
+    /* overflow: scroll; */
+    width: 90vw;
+    /* height: 50vh; */
+    /* margin: auto; */
+    /* float: right; */
+    /* float: left;/ */
+    float: center;
+    top: 0;
+    /* display: flex; */
+  }
+
+  .mainImage{
+    width: 100%;
   }
 
 
@@ -255,10 +294,10 @@ animation: 1s infinite blink;
 
 
 
-  .mainImage {
+  /* .mainImage {
     width: 60%;
     
-  }
+  } */
 
   .section > div {
     /* position: -webkit-sticky;
