@@ -19,8 +19,11 @@ import { browserName, CustomView } from "react-device-detect";
 
 export default function Home({ posts }) {
   const router = useRouter();
+  const [isLoaded, setisLoaded] = useState(false);
   const [mappedPosts, setMappedPosts] = useState([]);
-
+  useEffect(() => {
+    setisLoaded(true);
+  }, []);
   useEffect(() => {
     if (posts.length) {
       const imgBuilder = imageUrlBuilder({
@@ -118,459 +121,465 @@ export default function Home({ posts }) {
         <script src="locomotive-scroll.min.js" defer></script>
         <script type="module" src="../assets/app.js" defer></script>
       </Head>
+      {isLoaded ? (
+        <>
+          <MobileView>
+            <div>
+              <div className="pb-96">
+                {/* <iframe className={styles.video} src="https://drive.google.com/file/d/14w2FfWc-LfdUSPoM79y06_sdVXXG_QXa/preview?start=1"></iframe> */}
+                {/* style="transform: translateY(-38.2813%);" style="position:absolute;top:0;left:0;width:100%;height:100%;" */}
+                {/* <div class="video-wrapper"><div class="plyr__video-embed__container" > */}
+                <iframe
+                  src="https://player.vimeo.com/video/721799699?h=b659979974?background=1&amp;autoplay=1&amp;muted=1&amp;loop=1&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                  frameBorder="0"
+                  className={styles.video}
+                  allow="autoplay; fullscreen; picture-in-picture; loop=1; muted=1"
+                  id="video"
+                  muted
+                  webkitallowfullscreen
+                  mozallowfullscreen
+                  allowFullScreen
+                  title="fixed metaverse"
+                ></iframe>
+                {/* <div class="plyr__captions"></div> */}
+                {/* </div> */}
+              </div>
 
-      <MobileView>
-        <div>
-          <div className="pb-96">
-            {/* <iframe className={styles.video} src="https://drive.google.com/file/d/14w2FfWc-LfdUSPoM79y06_sdVXXG_QXa/preview?start=1"></iframe> */}
-            {/* style="transform: translateY(-38.2813%);" style="position:absolute;top:0;left:0;width:100%;height:100%;" */}
-            {/* <div class="video-wrapper"><div class="plyr__video-embed__container" > */}
-            <iframe
-              src="https://player.vimeo.com/video/721799699?h=b659979974?background=1&amp;autoplay=1&amp;muted=1&amp;loop=1&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-              frameBorder="0"
-              className={styles.video}
-              allow="autoplay; fullscreen; picture-in-picture; loop=1; muted=1"
-              id="video"
-              muted
-              webkitallowfullscreen
-              mozallowfullscreen
-              allowFullScreen
-              title="fixed metaverse"
-            ></iframe>
-            {/* <div class="plyr__captions"></div> */}
-            {/* </div> */}
-          </div>
+              <div className={styles.main}>
+                <div className={styles.logocontmobile}>
+                  <img
+                    className={styles.logomoblie}
+                    src="https://i.ibb.co/9T4ft5j/logo.png"
+                  />
+                </div>
 
-          <div className={styles.main}>
-            <div className={styles.logocontmobile}>
-              <img
-                className={styles.logomoblie}
-                src="https://i.ibb.co/9T4ft5j/logo.png"
-              />
+                <div className={styles.figuren}>
+                  <img
+                    className={styles.figurenmobile}
+                    src="https://i.ibb.co/Qmy29Fc/foreground-fixed.png"
+                  />
+                </div>
+
+                {/* <h3>Recent Posts:</h3> */}
+
+                <div className={styles.feed}>
+                  {mappedPosts.length ? (
+                    mappedPosts.map((p, id) => (
+                      <div
+                        onClick={() =>
+                          router.push(`/firsttwo/${p.slug.current}`)
+                        }
+                        key={id}
+                        className={styles.post}
+                      >
+                        <img
+                          className={styles.mainImage}
+                          src={p.mainImagefirsttwo}
+                        />
+                        <div className={styles.titleofprojectscont}>
+                          <p className={styles.titleofprojectsmobile}>
+                            {p.titleofproject}
+                          </p>
+                        </div>
+                      </div>
+                    ))
+                  ) : (
+                    <>No Posts Yet</>
+                  )}
+                </div>
+              </div>
             </div>
 
-            <div className={styles.figuren}>
-              <img
-                className={styles.figurenmobile}
-                src="https://i.ibb.co/Qmy29Fc/foreground-fixed.png"
-              />
-            </div>
-
-            {/* <h3>Recent Posts:</h3> */}
-
-            <div className={styles.feed}>
-              {mappedPosts.length ? (
-                mappedPosts.map((p, id) => (
-                  <div
-                    onClick={() => router.push(`/firsttwo/${p.slug.current}`)}
-                    key={id}
-                    className={styles.post}
+            <footer className={styles.footer}>
+              <div className="pb-40 inline-grid grid-cols-1">
+                <p className="px-1 ">Archive</p>
+                <div className="px-1">
+                  {/* <ul className="list-none font-light text-center" > */}
+                  <p className=" text-center ">Contact me :)</p>
+                  <li className="list-none">xinyu.c.contact@gmail.com</li>
+                  <a
+                    href="https://www.instagram.com/chuangxyyy/"
+                    data-location="internal"
                   >
-                    <img
-                      className={styles.mainImage}
-                      src={p.mainImagefirsttwo}
-                    />
-                    <div className={styles.titleofprojectscont}>
-                      <p className={styles.titleofprojectsmobile}>
-                        {p.titleofproject}
-                      </p>
-                    </div>
-                  </div>
-                ))
-              ) : (
-                <>No Posts Yet</>
-              )}
-            </div>
-          </div>
-        </div>
+                    Instagram
+                  </a>
+                  {/* </ul> */}
+                </div>
+              </div>
 
-        <footer className={styles.footer}>
-          <div className="pb-40 inline-grid grid-cols-1">
-            <p className="px-1 ">Archive</p>
-            <div className="px-1">
-              {/* <ul className="list-none font-light text-center" > */}
-              <p className=" text-center ">Contact me :)</p>
-              <li className="list-none">xinyu.c.contact@gmail.com</li>
-              <a
-                href="https://www.instagram.com/chuangxyyy/"
-                data-location="internal"
-              >
-                Instagram
-              </a>
-              {/* </ul> */}
-            </div>
-          </div>
+              <div>
+                <p>Xinyu Chuang 2022</p>
+                <a
+                  href="https://www.instagram.com/is_this_gabrielle/"
+                  data-location="internal"
+                >
+                  © Created by the Internet Arcitect
+                </a>
+              </div>
+            </footer>
+          </MobileView>
 
-          <div>
-            <p>Xinyu Chuang 2022</p>
-            <a
-              href="https://www.instagram.com/is_this_gabrielle/"
-              data-location="internal"
-            >
-              © Created by the Internet Arcitect
-            </a>
-          </div>
-        </footer>
-      </MobileView>
-
-      {/* <noscript>
+          {/* <noscript>
 		You need to enable JavaScript to run this site.
 	</noscript> */}
 
-      <BrowserView>
-        {/* <img objectFit={"cover"} layout={"fill"} src="https://i.ibb.co/MfgWfH4/background-e.jpg" />  */}
-        <main className={styles.main}>
-          {/* BACK IMG */}
-          <div className="overflow-hidden">
-            {/* <div className={styles.test}></div> */}
-          </div>
-          {/* BACK IMG */}
-          {/* <div className='overflow-hidden'>
+          <BrowserView>
+            {/* <img objectFit={"cover"} layout={"fill"} src="https://i.ibb.co/MfgWfH4/background-e.jpg" />  */}
+            <main className={styles.main}>
+              {/* BACK IMG */}
+              <div className="overflow-hidden">
+                {/* <div className={styles.test}></div> */}
+              </div>
+              {/* BACK IMG */}
+              {/* <div className='overflow-hidden'>
       <div className={styles.test2}></div></div> */}
-          {/* BACK IMG */}
-          {/* <div className='overflow-hidden'>
+              {/* BACK IMG */}
+              {/* <div className='overflow-hidden'>
       <div className={styles.test3}></div></div> */}
 
-          {/* blobs */}
-          {/* <div className="mid" > 'overflow-hidden relative w-[140vw] opacity-95 */}
-          <div className={styles.figuren}>
-            <img
-              className={styles.figuren}
-              src="https://i.ibb.co/Qmy29Fc/foreground-fixed.png"
-            />
-          </div>
-          {/* </div> */}
-
-          {/* everything */}
-
-          {/* <h1 className=' text-9xl text-[white]'>Home</h1> */}
-          {/* className=' pb-5 text-5xl  text-[white]' */}
-          <section className={styles.section}>
-            {/* <div className="intro"> */}
-            <div className={styles.content}>
-              <div className={styles.logocont}>
+              {/* blobs */}
+              {/* <div className="mid" > 'overflow-hidden relative w-[140vw] opacity-95 */}
+              <div className={styles.figuren}>
                 <img
-                  className={styles.logo}
-                  src="https://i.ibb.co/9T4ft5j/logo.png"
+                  className={styles.figuren}
+                  src="https://i.ibb.co/Qmy29Fc/foreground-fixed.png"
                 />
               </div>
+              {/* </div> */}
 
-              <div className={styles.logocont}>
-                <img
-                  className={styles.logo2}
-                  src="https://i.ibb.co/9T4ft5j/logo.png"
-                />
-              </div>
+              {/* everything */}
 
-              <img
-                className={styles.bigimgn}
-                src="https://i.ibb.co/Y3s7XSH/entropy-link.png"
-              />
+              {/* <h1 className=' text-9xl text-[white]'>Home</h1> */}
+              {/* className=' pb-5 text-5xl  text-[white]' */}
+              <section className={styles.section}>
+                {/* <div className="intro"> */}
+                <div className={styles.content}>
+                  <div className={styles.logocont}>
+                    <img
+                      className={styles.logo}
+                      src="https://i.ibb.co/9T4ft5j/logo.png"
+                    />
+                  </div>
 
-              {/* <div className={styles.blurtopcont}>
+                  <div className={styles.logocont}>
+                    <img
+                      className={styles.logo2}
+                      src="https://i.ibb.co/9T4ft5j/logo.png"
+                    />
+                  </div>
+
+                  <img
+                    className={styles.bigimgn}
+                    src="https://i.ibb.co/Y3s7XSH/entropy-link.png"
+                  />
+
+                  {/* <div className={styles.blurtopcont}>
     <img className={styles.blurtop} src="https://i.ibb.co/M7q9767/output-onlinepngtools.png"/>
     </div> */}
 
-              <CustomView condition={browserName === "Chrome"}>
-                <div className={styles.entropycont}>
-                  <p className={styles.entropy}>
-                    <Marquee>
-                      {" "}
-                      entropy entropy entropy entropy entropy entropy entropy
-                      entropy entropy entropy entropy entropy entropy entropy{" "}
-                    </Marquee>
-                  </p>
-                </div>
-              </CustomView>
-
-              <CustomView condition={browserName === "Firefox"}>
-                <div className={styles.entropycontfire}>
-                  <p className={styles.entropyfire}>
-                    <Marquee>
-                      {" "}
-                      entropy entropy entropy entropy entropy entropy entropy
-                      entropy entropy entropy entropy entropy entropy entropy{" "}
-                    </Marquee>
-                  </p>
-                </div>
-              </CustomView>
-
-              <CustomView condition={browserName === "Safari"}>
-                <div className={styles.entropycontsaf}>
-                  <p className={styles.entropy}>
-                    <Marquee>
-                      {" "}
-                      entropy entropy entropy entropy entropy entropy entropy
-                      entropy entropy entropy entropy entropy entropy entropy{" "}
-                    </Marquee>
-                  </p>
-                </div>
-              </CustomView>
-            </div>
-            {/* </div>  */}
-          </section>
-
-          <section className={styles.section}>
-            <div className={styles.content}>
-              {/* <span className={styles.dot}></span> */}
-              {/* <h1 className={styles.entropyraw}>Raw Reality</h1> */}
-              {/* BACK IMG */}
-
-              {/* <div className={styles.test4}></div> */}
-              <CustomView condition={browserName === "Chrome"}>
-                <div className={styles.test3}></div>
-                <div className={styles.wrapper}>
-                  {mappedPosts.length ? (
-                    mappedPosts.map((p, id) => (
-                      <div
-                        onClick={() =>
-                          router.push(`/firsttwo/${p.slug.current}`)
-                        }
-                        key={id}
-                      >
-                        {/* <div className={styles.containerproject2}> */}
-                        <img
-                          className={styles.mainImage2}
-                          src={p.mainImagefirsttwo}
-                        />
-                        <p className={styles.titleofprojectsn2}>
-                          {p.titleofproject}
-                        </p>
-                      </div>
-                      // </div>
-                    ))
-                  ) : (
-                    <>No Posts Yet</>
-                  )}
-
-                  <img
-                    className={styles.flower1n}
-                    src="https://i.ibb.co/yyX4PqP/3.png"
-                  />
-                  <img
-                    className={styles.man}
-                    src="https://i.ibb.co/1Jq6bnP/5.png"
-                  />
-
-                  <div className={styles.hscrollcont}>
-                    <div className="hscroll">
-                      <img
-                        className={styles.flyingimg}
-                        src="https://i.ibb.co/hLScpnh/13-1-1.png"
-                      />
-                      <p className={styles.titleofprojecthottest}>
-                        Hottest In Da Metaverse
+                  <CustomView condition={browserName === "Chrome"}>
+                    <div className={styles.entropycont}>
+                      <p className={styles.entropy}>
+                        <Marquee>
+                          {" "}
+                          entropy entropy entropy entropy entropy entropy
+                          entropy entropy entropy entropy entropy entropy
+                          entropy entropy{" "}
+                        </Marquee>
                       </p>
                     </div>
-                  </div>
+                  </CustomView>
 
-                  <div className={styles.videocontchrome}>
-                    {/* <iframe className={styles.video} src="https://drive.google.com/file/d/14w2FfWc-LfdUSPoM79y06_sdVXXG_QXa/preview?start=1"></iframe> */}
-                    {/* style="transform: translateY(-38.2813%);" style="position:absolute;top:0;left:0;width:100%;height:100%;" */}
-                    {/* <div class="video-wrapper"><div class="plyr__video-embed__container" > */}
-                    <iframe
-                      src="https://player.vimeo.com/video/721799699?h=b659979974?background=1&amp;autoplay=1&amp;muted=1&amp;loop=1&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-                      frameBorder="0"
-                      className={styles.video}
-                      allow="autoplay; fullscreen; picture-in-picture; loop=1; muted=1"
-                      id="video"
-                      muted
-                      webkitallowfullscreen
-                      mozallowfullscreen
-                      allowFullScreen
-                      title="fixed metaverse"
-                    ></iframe>
-                    {/* <div class="plyr__captions"></div> */}
-                    {/* </div> */}
-                  </div>
-
-                  <div className={styles.botflowercont}>
-                    <img
-                      className={styles.botflower}
-                      src="https://i.ibb.co/TDXZH4y/1-2.png"
-                    />
-                  </div>
-
-                  <img
-                    className={styles.flowergreen}
-                    src="https://i.ibb.co/xzd0Kz4/9.png"
-                  />
-                </div>
-              </CustomView>
-
-              <CustomView condition={browserName === "Firefox"}>
-                <div className={styles.test3fire}></div>
-                <div className={styles.wrapperfire}>
-                  {mappedPosts.length ? (
-                    mappedPosts.map((p, id) => (
-                      <div
-                        onClick={() =>
-                          router.push(`/firsttwo/${p.slug.current}`)
-                        }
-                        key={id}
-                      >
-                        {/* <div className={styles.containerproject2}> */}
-                        <img
-                          className={styles.mainImage2}
-                          src={p.mainImagefirsttwo}
-                        />
-                        <p className={styles.titleofprojectsn2}>
-                          {p.titleofproject}
-                        </p>
-                      </div>
-                      // </div>
-                    ))
-                  ) : (
-                    <>No Posts Yet</>
-                  )}
-
-                  <img
-                    className={styles.flower1n}
-                    src="https://i.ibb.co/yyX4PqP/3.png"
-                  />
-                  <img
-                    className={styles.man}
-                    src="https://i.ibb.co/1Jq6bnP/5.png"
-                  />
-
-                  <div className={styles.hscrollcont}>
-                    {/* <div className={styles.hscroll}> */}
-                    <div className="hscroll">
-                      <img
-                        className={styles.flyingimg}
-                        src="https://i.ibb.co/hLScpnh/13-1-1.png"
-                      />
-                      <p>
-                        <span className={styles.titleofprojecthottest}>
-                          Hottest In Da Metaverse
-                        </span>
+                  <CustomView condition={browserName === "Firefox"}>
+                    <div className={styles.entropycontfire}>
+                      <p className={styles.entropyfire}>
+                        <Marquee>
+                          {" "}
+                          entropy entropy entropy entropy entropy entropy
+                          entropy entropy entropy entropy entropy entropy
+                          entropy entropy{" "}
+                        </Marquee>
                       </p>
-                      {/* </div>  */}
                     </div>
-                  </div>
+                  </CustomView>
 
-                  <div className={styles.videocont}>
-                    {/* <iframe className={styles.video} src="https://drive.google.com/file/d/14w2FfWc-LfdUSPoM79y06_sdVXXG_QXa/preview?start=1"></iframe> */}
-                    {/* style="transform: translateY(-38.2813%);" style="position:absolute;top:0;left:0;width:100%;height:100%;" */}
-                    {/* <div class="video-wrapper"><div class="plyr__video-embed__container" > */}
-                    <iframe
-                      src="https://player.vimeo.com/video/721799699?h=b659979974?background=1&amp;autoplay=1&amp;muted=1&amp;loop=1&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-                      frameBorder="0"
-                      className={styles.video}
-                      allow="autoplay; fullscreen; picture-in-picture; loop=1; muted=1"
-                      id="video"
-                      muted
-                      webkitallowfullscreen
-                      mozallowfullscreen
-                      allowFullScreen
-                      title="fixed metaverse"
-                    ></iframe>
-                    {/* <div class="plyr__captions"></div> */}
-                    {/* </div> */}
-                  </div>
-
-                  <div className={styles.botflowercontfire}>
-                    <img
-                      className={styles.botflower}
-                      src="https://i.ibb.co/TDXZH4y/1-2.png"
-                    />
-                  </div>
-
-                  <img
-                    className={styles.flowergreen}
-                    src="https://i.ibb.co/xzd0Kz4/9.png"
-                  />
+                  <CustomView condition={browserName === "Safari"}>
+                    <div className={styles.entropycontsaf}>
+                      <p className={styles.entropy}>
+                        <Marquee>
+                          {" "}
+                          entropy entropy entropy entropy entropy entropy
+                          entropy entropy entropy entropy entropy entropy
+                          entropy entropy{" "}
+                        </Marquee>
+                      </p>
+                    </div>
+                  </CustomView>
                 </div>
-              </CustomView>
+                {/* </div>  */}
+              </section>
 
-              <CustomView condition={browserName === "Safari"}>
-                <div className={styles.test3saf}></div>
-                <div className={styles.wrappersafari}>
-                  {mappedPosts.length ? (
-                    mappedPosts.map((p, id) => (
-                      <div
-                        onClick={() =>
-                          router.push(`/firsttwo/${p.slug.current}`)
-                        }
-                        key={id}
-                      >
-                        {/* <div className={styles.containerproject2}> */}
-                        <img
-                          className={styles.mainImage2}
-                          src={p.mainImagefirsttwo}
-                        />
-                        <p className={styles.titleofprojectsn2}>
-                          {p.titleofproject}
-                        </p>
-                      </div>
-                      // </div>
-                    ))
-                  ) : (
-                    <>No Posts Yet</>
-                  )}
+              <section className={styles.section}>
+                <div className={styles.content}>
+                  {/* <span className={styles.dot}></span> */}
+                  {/* <h1 className={styles.entropyraw}>Raw Reality</h1> */}
+                  {/* BACK IMG */}
 
-                  <img
-                    className={styles.flower1nsaf}
-                    src="https://i.ibb.co/yyX4PqP/3.png"
-                  />
-                  <img
-                    className={styles.man}
-                    src="https://i.ibb.co/1Jq6bnP/5.png"
-                  />
+                  {/* <div className={styles.test4}></div> */}
+                  <CustomView condition={browserName === "Chrome"}>
+                    <div className={styles.test3}></div>
+                    <div className={styles.wrapper}>
+                      {mappedPosts.length ? (
+                        mappedPosts.map((p, id) => (
+                          <div
+                            onClick={() =>
+                              router.push(`/firsttwo/${p.slug.current}`)
+                            }
+                            key={id}
+                          >
+                            {/* <div className={styles.containerproject2}> */}
+                            <img
+                              className={styles.mainImage2}
+                              src={p.mainImagefirsttwo}
+                            />
+                            <p className={styles.titleofprojectsn2}>
+                              {p.titleofproject}
+                            </p>
+                          </div>
+                          // </div>
+                        ))
+                      ) : (
+                        <>No Posts Yet</>
+                      )}
 
-                  <div className={styles.hscrollcont}>
-                    <div className={styles.hscroll}>
-                      <div className="hscroll">
-                        <img
-                          className={styles.flyingimg}
-                          src="https://i.ibb.co/hLScpnh/13-1-1.png"
-                        />
-                        <p>
-                          <span className={styles.titleofprojecthottest}>
+                      <img
+                        className={styles.flower1n}
+                        src="https://i.ibb.co/yyX4PqP/3.png"
+                      />
+                      <img
+                        className={styles.man}
+                        src="https://i.ibb.co/1Jq6bnP/5.png"
+                      />
+
+                      <div className={styles.hscrollcont}>
+                        <div className="hscroll">
+                          <img
+                            className={styles.flyingimg}
+                            src="https://i.ibb.co/hLScpnh/13-1-1.png"
+                          />
+                          <p className={styles.titleofprojecthottest}>
                             Hottest In Da Metaverse
-                          </span>
-                        </p>
+                          </p>
+                        </div>
                       </div>
+
+                      <div className={styles.videocontchrome}>
+                        {/* <iframe className={styles.video} src="https://drive.google.com/file/d/14w2FfWc-LfdUSPoM79y06_sdVXXG_QXa/preview?start=1"></iframe> */}
+                        {/* style="transform: translateY(-38.2813%);" style="position:absolute;top:0;left:0;width:100%;height:100%;" */}
+                        {/* <div class="video-wrapper"><div class="plyr__video-embed__container" > */}
+                        <iframe
+                          src="https://player.vimeo.com/video/721799699?h=b659979974?background=1&amp;autoplay=1&amp;muted=1&amp;loop=1&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                          frameBorder="0"
+                          className={styles.video}
+                          allow="autoplay; fullscreen; picture-in-picture; loop=1; muted=1"
+                          id="video"
+                          muted
+                          webkitallowfullscreen
+                          mozallowfullscreen
+                          allowFullScreen
+                          title="fixed metaverse"
+                        ></iframe>
+                        {/* <div class="plyr__captions"></div> */}
+                        {/* </div> */}
+                      </div>
+
+                      <div className={styles.botflowercont}>
+                        <img
+                          className={styles.botflower}
+                          src="https://i.ibb.co/TDXZH4y/1-2.png"
+                        />
+                      </div>
+
+                      <img
+                        className={styles.flowergreen}
+                        src="https://i.ibb.co/xzd0Kz4/9.png"
+                      />
                     </div>
-                  </div>
+                  </CustomView>
 
-                  <div className={styles.videocont}>
-                    {/* <iframe className={styles.video} src="https://drive.google.com/file/d/14w2FfWc-LfdUSPoM79y06_sdVXXG_QXa/preview?start=1"></iframe> */}
-                    {/* style="transform: translateY(-38.2813%);" style="position:absolute;top:0;left:0;width:100%;height:100%;" */}
-                    {/* <div class="video-wrapper"><div class="plyr__video-embed__container" > */}
-                    <iframe
-                      src="https://player.vimeo.com/video/721799699?h=b659979974?background=1&amp;autoplay=1&amp;muted=1&amp;loop=1&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-                      frameBorder="0"
-                      className={styles.video}
-                      allow="autoplay; fullscreen; picture-in-picture; loop=1; muted=1"
-                      id="video"
-                      muted
-                      webkitallowfullscreen
-                      mozallowfullscreen
-                      allowFullScreen
-                      title="fixed metaverse"
-                    ></iframe>
-                    {/* <div class="plyr__captions"></div> */}
-                    {/* </div> */}
-                  </div>
+                  <CustomView condition={browserName === "Firefox"}>
+                    <div className={styles.test3fire}></div>
+                    <div className={styles.wrapperfire}>
+                      {mappedPosts.length ? (
+                        mappedPosts.map((p, id) => (
+                          <div
+                            onClick={() =>
+                              router.push(`/firsttwo/${p.slug.current}`)
+                            }
+                            key={id}
+                          >
+                            {/* <div className={styles.containerproject2}> */}
+                            <img
+                              className={styles.mainImage2}
+                              src={p.mainImagefirsttwo}
+                            />
+                            <p className={styles.titleofprojectsn2}>
+                              {p.titleofproject}
+                            </p>
+                          </div>
+                          // </div>
+                        ))
+                      ) : (
+                        <>No Posts Yet</>
+                      )}
 
-                  <div className={styles.botflowercontsaf}>
-                    <img
-                      className={styles.botflower}
-                      src="https://i.ibb.co/TDXZH4y/1-2.png"
-                    />
-                  </div>
+                      <img
+                        className={styles.flower1n}
+                        src="https://i.ibb.co/yyX4PqP/3.png"
+                      />
+                      <img
+                        className={styles.man}
+                        src="https://i.ibb.co/1Jq6bnP/5.png"
+                      />
 
-                  <img
-                    className={styles.flowergreensaf}
-                    src="https://i.ibb.co/xzd0Kz4/9.png"
-                  />
+                      <div className={styles.hscrollcont}>
+                        {/* <div className={styles.hscroll}> */}
+                        <div className="hscroll">
+                          <img
+                            className={styles.flyingimg}
+                            src="https://i.ibb.co/hLScpnh/13-1-1.png"
+                          />
+                          <p>
+                            <span className={styles.titleofprojecthottest}>
+                              Hottest In Da Metaverse
+                            </span>
+                          </p>
+                          {/* </div>  */}
+                        </div>
+                      </div>
+
+                      <div className={styles.videocont}>
+                        {/* <iframe className={styles.video} src="https://drive.google.com/file/d/14w2FfWc-LfdUSPoM79y06_sdVXXG_QXa/preview?start=1"></iframe> */}
+                        {/* style="transform: translateY(-38.2813%);" style="position:absolute;top:0;left:0;width:100%;height:100%;" */}
+                        {/* <div class="video-wrapper"><div class="plyr__video-embed__container" > */}
+                        <iframe
+                          src="https://player.vimeo.com/video/721799699?h=b659979974?background=1&amp;autoplay=1&amp;muted=1&amp;loop=1&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                          frameBorder="0"
+                          className={styles.video}
+                          allow="autoplay; fullscreen; picture-in-picture; loop=1; muted=1"
+                          id="video"
+                          muted
+                          webkitallowfullscreen
+                          mozallowfullscreen
+                          allowFullScreen
+                          title="fixed metaverse"
+                        ></iframe>
+                        {/* <div class="plyr__captions"></div> */}
+                        {/* </div> */}
+                      </div>
+
+                      <div className={styles.botflowercontfire}>
+                        <img
+                          className={styles.botflower}
+                          src="https://i.ibb.co/TDXZH4y/1-2.png"
+                        />
+                      </div>
+
+                      <img
+                        className={styles.flowergreen}
+                        src="https://i.ibb.co/xzd0Kz4/9.png"
+                      />
+                    </div>
+                  </CustomView>
+
+                  <CustomView condition={browserName === "Safari"}>
+                    <div className={styles.test3saf}></div>
+                    <div className={styles.wrappersafari}>
+                      {mappedPosts.length ? (
+                        mappedPosts.map((p, id) => (
+                          <div
+                            onClick={() =>
+                              router.push(`/firsttwo/${p.slug.current}`)
+                            }
+                            key={id}
+                          >
+                            {/* <div className={styles.containerproject2}> */}
+                            <img
+                              className={styles.mainImage2}
+                              src={p.mainImagefirsttwo}
+                            />
+                            <p className={styles.titleofprojectsn2}>
+                              {p.titleofproject}
+                            </p>
+                          </div>
+                          // </div>
+                        ))
+                      ) : (
+                        <>No Posts Yet</>
+                      )}
+
+                      <img
+                        className={styles.flower1nsaf}
+                        src="https://i.ibb.co/yyX4PqP/3.png"
+                      />
+                      <img
+                        className={styles.man}
+                        src="https://i.ibb.co/1Jq6bnP/5.png"
+                      />
+
+                      <div className={styles.hscrollcont}>
+                        <div className={styles.hscroll}>
+                          <div className="hscroll">
+                            <img
+                              className={styles.flyingimg}
+                              src="https://i.ibb.co/hLScpnh/13-1-1.png"
+                            />
+                            <p>
+                              <span className={styles.titleofprojecthottest}>
+                                Hottest In Da Metaverse
+                              </span>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className={styles.videocont}>
+                        {/* <iframe className={styles.video} src="https://drive.google.com/file/d/14w2FfWc-LfdUSPoM79y06_sdVXXG_QXa/preview?start=1"></iframe> */}
+                        {/* style="transform: translateY(-38.2813%);" style="position:absolute;top:0;left:0;width:100%;height:100%;" */}
+                        {/* <div class="video-wrapper"><div class="plyr__video-embed__container" > */}
+                        <iframe
+                          src="https://player.vimeo.com/video/721799699?h=b659979974?background=1&amp;autoplay=1&amp;muted=1&amp;loop=1&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                          frameBorder="0"
+                          className={styles.video}
+                          allow="autoplay; fullscreen; picture-in-picture; loop=1; muted=1"
+                          id="video"
+                          muted
+                          webkitallowfullscreen
+                          mozallowfullscreen
+                          allowFullScreen
+                          title="fixed metaverse"
+                        ></iframe>
+                        {/* <div class="plyr__captions"></div> */}
+                        {/* </div> */}
+                      </div>
+
+                      <div className={styles.botflowercontsaf}>
+                        <img
+                          className={styles.botflower}
+                          src="https://i.ibb.co/TDXZH4y/1-2.png"
+                        />
+                      </div>
+
+                      <img
+                        className={styles.flowergreensaf}
+                        src="https://i.ibb.co/xzd0Kz4/9.png"
+                      />
+                    </div>
+                  </CustomView>
                 </div>
-              </CustomView>
-            </div>
-          </section>
+              </section>
 
-          {/* <section className={styles.vidsection}> 
+              {/* <section className={styles.vidsection}> 
 <div className={styles.containerflyingimg}>
   <div className="hscroll">
         <img className={styles.flyingimg} src="https://i.ibb.co/9ZNbgcj/13.png"/>
@@ -585,9 +594,9 @@ export default function Home({ posts }) {
         <iframe className={styles.video}src="https://drive.google.com/file/d/14w2FfWc-LfdUSPoM79y06_sdVXXG_QXa/preview?start=1"></iframe>
 </section> */}
 
-          {/* <img className={styles.flower1n} src="https://i.ibb.co/yyX4PqP/3.png"/> */}
+              {/* <img className={styles.flower1n} src="https://i.ibb.co/yyX4PqP/3.png"/> */}
 
-          {/* {mappedPosts.length ? mappedPosts.map((p, index) => (
+              {/* {mappedPosts.length ? mappedPosts.map((p, index) => (
             <div onClick={() => router.push(`/secondtwo/${p.slug.current}`)} key={index}>
                       <div className={styles.containerproject2}>
                         <img  className={styles.mainImage2} src={p.mainImagesecondtwo} />
@@ -597,7 +606,7 @@ export default function Home({ posts }) {
             
           )) : <>No Posts Yet</>} */}
 
-          {/* {mappedPosts.length ? mappedPosts.map((p, index) => (
+              {/* {mappedPosts.length ? mappedPosts.map((p, index) => (
             <div onClick={() => router.push(`/third/${p.slug.current}`)} key={index}>
                       <div className={styles.containerproject2}>
                         <img  className={styles.notsoImage} src={p.mainImage3} />
@@ -616,41 +625,52 @@ export default function Home({ posts }) {
             </div>
           )) : <>No Posts Yet</>} */}
 
-          <footer className={styles.footer}>
-            <div className="pb-40 inline-grid grid-cols-2">
-              <p className="px-1 ">Archive</p>
-              <div className="px-1">
-                <ul className="list-none font-light text-left">
-                  <p className=" text-left ">Contact me :)</p>
-                  <li>xinyu.c.contact@gmail.com</li>
+              <footer className={styles.footer}>
+                <div className="pb-40 inline-grid grid-cols-2">
+                  <p className="px-1 ">Archive</p>
+                  <div className="px-1">
+                    <ul className="list-none font-light text-left">
+                      <p className=" text-left ">Contact me :)</p>
+                      <li>xinyu.c.contact@gmail.com</li>
+                      <a
+                        href="https://www.instagram.com/chuangxyyy/"
+                        data-location="internal"
+                      >
+                        Instagram
+                      </a>
+                    </ul>
+                  </div>
+                </div>
+
+                <div>
+                  <p>Xinyu Chuang 2022</p>
                   <a
-                    href="https://www.instagram.com/chuangxyyy/"
+                    href="https://www.instagram.com/is_this_gabrielle/"
                     data-location="internal"
                   >
-                    Instagram
+                    © Created by the Internet Arcitect
                   </a>
-                </ul>
-              </div>
-            </div>
+                </div>
+              </footer>
+            </main>
+          </BrowserView>
 
-            <div>
-              <p>Xinyu Chuang 2022</p>
-              <a
-                href="https://www.instagram.com/is_this_gabrielle/"
-                data-location="internal"
-              >
-                © Created by the Internet Arcitect
-              </a>
-            </div>
-          </footer>
-        </main>
-      </BrowserView>
-
-      {/* <footer className={styles.footer}>
+          {/* <footer className={styles.footer}>
 
       <p>© XINYU Chuang 2021</p>
 
       </footer> */}
+        </>
+      ) : (
+        <div className="w-screen h-screen flex justify-center items-center">
+          <Image
+            src="/images/mrbean.gif"
+            width={1080}
+            height={720}
+            alt="Mrbean GIF - Loading fallback"
+          />
+        </div>
+      )}
     </div>
   );
 }
