@@ -51,8 +51,8 @@ export default function Home({ posts }) {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Lucy Chuang</title>
-        <meta name="description" content="Lucy Chuang portfolio" />
+        <title>XINYU Chuang</title>
+        <meta name="description" content="XINYU Chuang portfolio" />
         {/* <link rel="icon" href="https://i.ibb.co/9T4ft5j/logo.png" /> */}
         <link rel="icon" href="/favicon.ico" />
 
@@ -63,14 +63,14 @@ export default function Home({ posts }) {
   />
   <meta
     name="description"
-    content="Lucy Chuang portfolio author: Gabrielle the  Internet Arcitect ©2022 category:application-javascript"
+    content="XINYU Chuang portfolio author: Gabrielle the  Internet Arcitect ©2022 category:application-javascript"
   />
   {/* <meta property="og:url" content="http://niksgames.com/blockland" /> */}
   <meta property="og:type" content="product" />
-  <meta property="og:title" content="Lucy Chuang portfolio" />
+  <meta property="og:title" content="XINYU Chuang portfolio" />
   <meta
     property="og:description"
-    content="Lucy Chuang portfolio author:Gabrielle ©2022 category:application-javascript"
+    content="XINYU Chuang portfolio author:Gabrielle ©2022 category:application-javascript"
   />
   <meta
     property="og:image"
@@ -79,7 +79,7 @@ export default function Home({ posts }) {
   <meta property="og:image:type" content="https://i.ibb.co/9T4ft5j/logo.png" />
   <meta property="og:image:width" content={1265} />
   <meta property="og:image:height" content={817} />
-  <meta property="og:image:alt" content="Lucy Chuang portfolio" />
+  <meta property="og:image:alt" content="XINYU Chuang portfolio" />
 </>
 
 
@@ -283,7 +283,7 @@ export default function Home({ posts }) {
   
 
        
-                  <div className={styles.videocont}>
+                  <div className={styles.videocontchrome}>
                         {/* <iframe className={styles.video} src="https://drive.google.com/file/d/14w2FfWc-LfdUSPoM79y06_sdVXXG_QXa/preview?start=1"></iframe> */}
                         {/* style="transform: translateY(-38.2813%);" style="position:absolute;top:0;left:0;width:100%;height:100%;" */}
                         {/* <div class="video-wrapper"><div class="plyr__video-embed__container" > */}
@@ -518,7 +518,7 @@ export default function Home({ posts }) {
 
       {/* <footer className={styles.footer}>
 
-      <p>© Lucy Chuang 2021</p>
+      <p>© XINYU Chuang 2021</p>
 
       </footer> */}
     </div>

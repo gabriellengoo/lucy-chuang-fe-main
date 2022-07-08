@@ -890,7 +890,42 @@ margin: auto;
   
 
 
+  
+  #Date {
+    text-align:center;
+    color: white;
+  }
+  
+  .ul {
+    margin:0 auto;
+    padding:0px;
+    list-style:none;
+    flex: auto;
+    /* float:right; */
+  }
+  
+  .ul li {
+    display:inline;
+    flex: auto;
+  }
+  
+  #point {
+    position:relative;
+  }
+  
 
+
+  #header-customer{
+    float:right;
+  }
+
+  .wrap{
+    /* background:red;
+    overflow:auto;
+    width:100%; */
+    float:right;
+}
+  
 
 
 

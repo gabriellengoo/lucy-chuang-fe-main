@@ -63,7 +63,7 @@ export const Post = ({ titleofproject, mainImagefirsttwo, images }) => {
     <div className={styles.main}>
       <Head>
         <title>{titleofproject}</title>
-        <meta name="description" content="Lucy Chuang portfolio" />
+        <meta name="description" content="XINYU Chuang portfolio" />
         <link rel="icon" href="/favicon.ico" />
         {/* <link rel="icon" href="https://i.ibb.co/9T4ft5j/logo.png" /> */}
         <script
@@ -102,7 +102,7 @@ export const Post = ({ titleofproject, mainImagefirsttwo, images }) => {
           defer
         ></script>
         {/* <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript" defer></script> */}
-
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" defer></script>
         <script type="module" src="../../assets/app.js" defer></script>
       </Head>
 
@@ -124,19 +124,36 @@ export const Post = ({ titleofproject, mainImagefirsttwo, images }) => {
               <div className={styles.tlabel}>
                 <div className={styles.headeredition}>
                   <a href="../" data-location="internal">
-                    2022 LUCY CHUANG
+                    2022 XINYU CHUANG 
                   </a>
                 </div>
-                <div className={styles.headertime}>06:20:22</div>
-                <div id="header-customer">
-                  <a
-                    href="https://www.instagram.com/is_this_gabrielle/"
-                    data-location="internal"
-                  >
-                    © Created by the Internet Arcitect
-                  </a>
+                <div>__</div>
+                {/* <div className={styles.headertime}> 06:20:22</div> */}
+                <div className={styles.headertime}>
+                  <div></div>
+                        <div id="Date"></div>
+                      <ul className={styles.ul}>
+                          <li id="hours"></li>
+                          <li id="point">:</li>
+                          <li id="min"></li>
+                          <li id="point">:</li>
+                          <li id="sec"></li>
+                      </ul>
+                    <div></div>
                 </div>
-              </div>
+                {/* <div className={styles.headertime} id="current_dateandtime"> ..d</div> */}
+
+                  <div className={styles.wrap}>              
+                        <div id="header-customer">
+                          <a
+                            href="https://www.instagram.com/is_this_gabrielle/"
+                            data-location="internal"
+                          >
+                            © Created by the Internet Arcitect
+                          </a>
+                        </div>
+                  </div>
+              </div>  
             </header>
 
 

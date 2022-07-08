@@ -950,7 +950,7 @@ position: reletive;
   /* top: 580vh; */
   /* bottom: 1000vh; */
     /* left: 27vw; */
-    top: -420vh;
+    top: -430vh;
     /* botom: 1000vh; */
     left: 15vw;
 }
@@ -1326,6 +1326,35 @@ position:relative;
   z-index:-1;
   pointer-events: none;
   }
+
+
+  .videocontchrome{
+    
+  z-index:-1;
+  /* z-index: 100; */
+  border: none;
+  position: relative;
+  /* position: absolute; */
+  top: -510vh;
+  /* padding-top: 300px; */
+  width: 100vw;
+  height: 100vh;
+  -webkit-transform: translateY(-38.2779%);
+      -ms-transform: translateY(-38.2779%);
+          transform: translateY(-38.2779%);
+  }
+
+
+  .videocontchrome > iframe {
+    width:120%; 
+    height:180%; 
+    position:absolute; 
+    left:-10vh; 
+    /* top:-40%;  */
+    z-index:-1;
+    pointer-events: none;
+    }
+
 
 
 .video{

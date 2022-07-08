@@ -10,7 +10,7 @@ export const Post = () => {
     <div className={styles.main}>
       <Head>
         <title>Made In Britain</title>
-        <meta name="description" content="Lucy Chuang portfolio" />
+        <meta name="description" content="XINYU Chuang portfolio" />
         {/* <link rel="icon" href="/favicon.ico" /> */}
         {/* <link rel="icon" href="https://i.ibb.co/9T4ft5j/logo.png" /> */}
         <link rel="icon" href="/favicon.ico" />
@@ -61,10 +61,23 @@ export const Post = () => {
         <div className={styles.tlabel}>
           <div className={styles.headeredition}>
             <a href="../" data-location="internal">
-              2022 LUCY CHUANG
+              2022 XINYU CHUANG
             </a>
           </div>
-          <div className={styles.headertime}>06:20:22</div>
+          <div>__</div>
+                {/* <div className={styles.headertime}> 06:20:22</div> */}
+                <div className={styles.headertime}>
+                  <div></div>
+                        <div id="Date"></div>
+                      <ul className={styles.ul}>
+                          <li id="hours"></li>
+                          <li id="point">:</li>
+                          <li id="min"></li>
+                          <li id="point">:</li>
+                          <li id="sec"></li>
+                      </ul>
+                    <div></div>
+                </div>
           <div id="header-customer">
             <a
               href="https://www.instagram.com/is_this_gabrielle/"
@@ -80,8 +93,13 @@ export const Post = () => {
           <div onClick={() => Router.back()}> ← Back</div>
         </h1>
       </div>
+
+
+
       {/* ----------------------------------------------------- here are the images   -----------------------------------------------------  */}
       <HorizontalCarousel />
+
+
     </div>
   );
 };
