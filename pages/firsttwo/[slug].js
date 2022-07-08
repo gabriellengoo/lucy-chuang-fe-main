@@ -138,12 +138,12 @@ export const Post = ({ titleofproject, mainImagefirsttwo, images }) => {
                           <li id="min"></li>
                           <li id="point">:</li>
                           <li id="sec"></li>
-                      </ul>
+                      </ul> 
                     <div></div>
                 </div>
                 {/* <div className={styles.headertime} id="current_dateandtime"> ..d</div> */}
 
-                  <div className={styles.wrap}>              
+                  {/* <div className={styles.wrap}>               */}
                         <div id="header-customer">
                           <a
                             href="https://www.instagram.com/is_this_gabrielle/"
@@ -152,7 +152,7 @@ export const Post = ({ titleofproject, mainImagefirsttwo, images }) => {
                             © Created by the Internet Arcitect
                           </a>
                         </div>
-                  </div>
+                  {/* </div> */}
               </div>  
             </header>
 
