@@ -22,7 +22,9 @@ export default function Home({ posts }) {
   const [isLoaded, setisLoaded] = useState(false);
   const [mappedPosts, setMappedPosts] = useState([]);
   useEffect(() => {
-    setisLoaded(true);
+    setTimeout(() => {
+      setisLoaded(true);
+    }, 3000);
   }, []);
   useEffect(() => {
     if (posts.length) {
