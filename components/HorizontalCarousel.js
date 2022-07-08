@@ -34,7 +34,7 @@ const HorizontalCarousel = (props) => {
   return (
     <div>
       {/* // ----------------------- top images ------------------------- */}
-      <div style={styles.imageContainer}>
+      <div style={{ ...styles.imageContainer, aspectRatio: "1 / 0.08" }}>
         <Arrow
           direction='left'
           onClick={() => {
@@ -45,7 +45,6 @@ const HorizontalCarousel = (props) => {
         <img style={styles.item} src={topImages[(top + 1) % 3]} />
         <Arrow
           direction='right'
-          style={styles.itemClick}
           onClick={() => {
             setTop((top + 1) % 3);
             console.log(top);
@@ -54,7 +53,7 @@ const HorizontalCarousel = (props) => {
         />
       </div>
       {/* // ----------------------- middle images ------------------------- */}
-      <div style={styles.imageContainer}>
+      <div style={{ ...styles.imageContainer, aspectRatio: "1 / 0.13" }}>
         <Arrow
           direction='left'
           onClick={() => {
@@ -74,7 +73,7 @@ const HorizontalCarousel = (props) => {
         />
       </div>
       {/* ----------------------- bottom images ------------------------- */}
-      <div style={styles.imageContainer}>
+      <div style={{ ...styles.imageContainer, aspectRatio: "1/0.21" }}>
         <Arrow
           direction='left'
           onClick={() => {
