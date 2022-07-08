@@ -1,10 +1,11 @@
 import imageUrlBuilder from "@sanity/image-url";
 import { useState, useEffect, useRef } from "react";
 import styles from "../../styles/Post.module.css";
+import Image from "next/image";
 // import style from '../../styles/Post.module.scss';
 // import BlockContent from '@sanity/block-content-to-react';
 import Head from "next/head";
-import Image from "../../components/Image";
+// import Image from "../../components/Image";
 // import Carousel from 'react-spring-3d-carousel';
 import React from "react";
 import ReactDOM from "react-dom";
@@ -16,8 +17,18 @@ import CarouselComponent from "../../components/carousel";
 import CarouselComponentmobile from "../../components/carouselmobile";
 import Router from 'next/router'
 import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
+import { useRouter } from "next/router";
 
 export const Post = ({ titleofproject, mainImagefirsttwo, images }) => {
+  const router = useRouter();
+  const [isLoaded, setisLoaded] = useState(false);
+  const [mappedPosts, setMappedPosts] = useState([]);
+  useEffect(() => {
+    setTimeout(() => {
+      setisLoaded(true); 
+    }, 6000);
+  }, []);
+
   const [imageUrl, setImageUrl] = useState("");
   const [refCallback, slider, sliderNode] = useKeenSlider(
     {
@@ -108,7 +119,8 @@ export const Post = ({ titleofproject, mainImagefirsttwo, images }) => {
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" defer></script>
         <script type="module" src="../../assets/app.js" defer></script>
       </Head>
-
+      {isLoaded ? (
+        <>
       <noscript>You need to enable JavaScript to run this site.</noscript>
 
 
@@ -286,7 +298,18 @@ export const Post = ({ titleofproject, mainImagefirsttwo, images }) => {
       </MobileView>
 
 
-
+      </>
+      ) : (
+        <div className="w-screen h-screen bg-black flex justify-center items-center">
+          <Image
+            src="/images/mrbean.gif"
+            width={270}
+            height={180}
+            alt="Mrbean GIF - Loading fallback"
+          />
+        </div>
+      )}
+     
 
 
 </div>

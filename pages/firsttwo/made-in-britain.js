@@ -6,9 +6,22 @@ import Router from "next/router";
 import HorizontalCarousel from "../../components/HorizontalCarousel";
 import HorizontalCarouselmobile from "../../components/HorizontalCarouselmoblie";
 import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
-
+import { useRouter } from "next/router";
+import { useState, useEffect, useRef } from "react";
+import Image from "next/image";
 
 export const Post = () => {
+
+  const router = useRouter();
+  const [isLoaded, setisLoaded] = useState(false);
+  const [mappedPosts, setMappedPosts] = useState([]);
+  useEffect(() => {
+    setTimeout(() => {
+      setisLoaded(true); 
+    }, 6000);
+  }, []);
+
+
   return (
     <div>
       <Head>
@@ -60,7 +73,8 @@ export const Post = () => {
 
         <script src="../../assets/app.js" defer></script>
       </Head>
-
+ {isLoaded ? (
+        <>
 
 
       <BrowserView> 
@@ -162,6 +176,18 @@ export const Post = () => {
       </div>
       </MobileView>
    
+      </>
+      ) : (
+        <div className="w-screen h-screen bg-black flex justify-center items-center">
+          <Image
+            src="/images/mrbean.gif"
+            width={270}
+            height={180}
+            alt="Mrbean GIF - Loading fallback"
+          />
+        </div>
+      )}
+
     </div>
   );
 };
