@@ -2,7 +2,7 @@
 import { urlFor } from "../sanity"
 import styles from '../styles/Post.module.css';
 
-const Image = ({ identifier, image }) => {
+const Images = ({ identifier, image }) => {
   return (
 
     
@@ -14,4 +14,4 @@ const Image = ({ identifier, image }) => {
   )
 }
 
-export default Image
+export default Images

@@ -5,7 +5,7 @@ import Image from "next/image";
 // import style from '../../styles/Post.module.scss';
 // import BlockContent from '@sanity/block-content-to-react';
 import Head from "next/head";
-// import Image from "../../components/Image";
+import Images from "../../components/Image";
 // import Carousel from 'react-spring-3d-carousel';
 import React from "react";
 import ReactDOM from "react-dom";
@@ -284,7 +284,7 @@ export const Post = ({ titleofproject, mainImagefirsttwo, images }) => {
          
          <div className={styles.subimagessection}>
          {images.map(({ _key, asset }, image) => (
-      <Image key={_key} identifier="images" className={styles.imagegallery} image={asset} />
+      <Images key={_key} identifier="images" className={styles.imagegallery} image={asset} />
       ))}
          </div>
 
