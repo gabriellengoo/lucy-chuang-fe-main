@@ -16,6 +16,8 @@ import {
   isMobile,
 } from "react-device-detect";
 import { browserName, CustomView } from "react-device-detect";
+import { useMediaQuery } from 'react-responsive';
+
 
 export default function Home({ posts }) {
   const router = useRouter();
@@ -26,6 +28,7 @@ export default function Home({ posts }) {
       setisLoaded(true);
     }, 3000);
   }, []);
+  const isBigScreen = useMediaQuery({ query: '(min-width: 1824px)' })
   useEffect(() => {
     if (posts.length) {
       const imgBuilder = imageUrlBuilder({
@@ -581,6 +584,11 @@ export default function Home({ posts }) {
                 </div>
               </section>
 
+
+
+              <MediaQuery minWidth={1824}>
+        <p>You also have a huge screen</p>
+      </MediaQuery>
               {/* <section className={styles.vidsection}> 
 <div className={styles.containerflyingimg}>
   <div className="hscroll">
