@@ -17,18 +17,15 @@ import {
 } from "react-device-detect";
 import { browserName, CustomView } from "react-device-detect";
 
-
 export default function Home({ posts }) {
   const router = useRouter();
   const [isLoaded, setisLoaded] = useState(false);
   const [mappedPosts, setMappedPosts] = useState([]);
   useEffect(() => {
     setTimeout(() => {
-      setisLoaded(true); 
+      setisLoaded(true);
     }, 3000);
   }, []);
-
-  
   useEffect(() => {
     if (posts.length) {
       const imgBuilder = imageUrlBuilder({
@@ -676,9 +673,11 @@ export default function Home({ posts }) {
           />
         </div>
       )}
+
+
     </div>
   );
-}
+};
 
 export const getServerSideProps = async (pageContext) => {
   // const query = encodeURIComponent('*[ _type == "firsttwo" ]');
