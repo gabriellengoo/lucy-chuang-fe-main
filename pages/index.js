@@ -61,8 +61,8 @@ export default function Home({ posts }) {
   return (
     <div className={styles.container}>
       <Head>
-        <title>XINYU Chuang</title>
-        <meta name="description" content="XINYU Chuang portfolio" />
+        <title>Xinyu Chuang</title>
+        <meta name="description" content="Xinyu Chuang portfolio" />
         {/* <link rel="icon" href="https://i.ibb.co/9T4ft5j/logo.png" /> */}
         <link rel="icon" href="/favicon.ico" />
 
@@ -73,14 +73,14 @@ export default function Home({ posts }) {
           />
           <meta
             name="description"
-            content="XINYU Chuang portfolio author: Gabrielle the  Internet Arcitect ©2022 category:application-javascript"
+            content="Xinyu Chuang portfolio author: Gabrielle the  Internet Arcitect ©2022 category:application-javascript"
           />
           {/* <meta property="og:url" content="http://niksgames.com/blockland" /> */}
           <meta property="og:type" content="product" />
-          <meta property="og:title" content="XINYU Chuang portfolio" />
+          <meta property="og:title" content="Xinyu Chuang portfolio" />
           <meta
             property="og:description"
-            content="XINYU Chuang portfolio author:Gabrielle ©2022 category:application-javascript"
+            content="Xinyu Chuang portfolio author:Gabrielle ©2022 category:application-javascript"
           />
           <meta
             property="og:image"
@@ -92,7 +92,7 @@ export default function Home({ posts }) {
           />
           <meta property="og:image:width" content={1265} />
           <meta property="og:image:height" content={817} />
-          <meta property="og:image:alt" content="XINYU Chuang portfolio" />
+          <meta property="og:image:alt" content="Xinyu Chuang portfolio" />
         </>
 
         <link rel="apple-touch-icon" href="https://i.ibb.co/9T4ft5j/logo.png" />
@@ -123,6 +123,13 @@ export default function Home({ posts }) {
           src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"
           defer
         ></script>
+         <link
+            rel="preload"
+            href="/fonts/FPTypewriterDEMO-RegularItalic.otf"
+            as="font"
+            type="font/otf"
+            crossOrigin="anonymous"
+          />
         <script src="locomotive-scroll.min.js" defer></script>
         <script type="module" src="../assets/app.js" defer></script>
       </Head>
@@ -165,6 +172,8 @@ export default function Home({ posts }) {
                   />
                 </div>
 
+                
+
                 {/* <h3>Recent Posts:</h3> */}
 
                 <div className={styles.feed}>
@@ -201,7 +210,7 @@ export default function Home({ posts }) {
                 <div className="px-1">
                   {/* <ul className="list-none font-light text-center" > */}
                   <p className=" text-center ">Contact me :)</p>
-                  <li className="list-none">xinyu.c.contact@gmail.com</li>
+                  <li className="list-none">Xinyu.c.contact@gmail.com</li>
                   <a
                     href="https://www.instagram.com/chuangxyyy/"
                     data-location="internal"
@@ -229,58 +238,79 @@ export default function Home({ posts }) {
 	</noscript> */}
 
           <BrowserView>
-            {/* <img objectFit={"cover"} layout={"fill"} src="https://i.ibb.co/MfgWfH4/background-e.jpg" />  */}
             <main className={styles.main}>
-              {/* BACK IMG */}
-              <div className="overflow-hidden">
-                {/* <div className={styles.test}></div> */}
-              </div>
-              {/* BACK IMG */}
-              {/* <div className='overflow-hidden'>
-      <div className={styles.test2}></div></div> */}
-              {/* BACK IMG */}
-              {/* <div className='overflow-hidden'>
-      <div className={styles.test3}></div></div> */}
+          
 
-              {/* blobs */}
-              {/* <div className="mid" > 'overflow-hidden relative w-[140vw] opacity-95 */}
-              <div className={styles.figuren}>
+            {/* <div className={styles.hscrollcont}>
+  <div>OUR STORY</div>
+  <div className='hscroll'>
+    Lorem ipsum dolor sit amet
+  </div>  
+</div> */}
+
+
+                  <CustomView condition={browserName === "Chrome"}>
+                    <div className={styles.hscrollcont}>
+                        <div className='hscroll'> 
+                          <img
+                            className={styles.flyingimg}
+                            src="https://i.ibb.co/hLScpnh/13-1-1.png"
+                          />
+                          <p className={styles.titleofprojecthottest}>
+                            Hottest In Da Metaverse
+                          </p>
+                        </div>
+                      </div>
+                  </CustomView>   
+
+                  <CustomView condition={browserName === "Firefox"}>
+                    <div className={styles.hscrollcontfire}>
+                        <div className='hscroll'> 
+                          <img
+                            className={styles.flyingimg}
+                            src="https://i.ibb.co/hLScpnh/13-1-1.png"
+                          />
+                          <p className={styles.titleofprojecthottest}>
+                            Hottest In Da Metaverse
+                          </p>
+                        </div>
+                      </div>
+                  </CustomView>  
+
+                   <CustomView condition={browserName === "Safari"}>
+                    <div className={styles.hscrollcontsaf}>
+                        <div className='hscroll'> 
+                          <img
+                            className={styles.flyingimg}
+                            src="https://i.ibb.co/hLScpnh/13-1-1.png"
+                          />
+                          <p className={styles.titleofprojecthottest}>
+                            Hottest In Da Metaverse
+                          </p>
+                        </div>
+                      </div>
+                  </CustomView>   
+
+
+
+
+              <div>
                 <img
                   className={styles.figuren}
                   src="https://i.ibb.co/Qmy29Fc/foreground-fixed.png"
                 />
               </div>
-              {/* </div> */}
-
-              {/* everything */}
-
-              {/* <h1 className=' text-9xl text-[white]'>Home</h1> */}
-              {/* className=' pb-5 text-5xl  text-[white]' */}
+          
               <section className={styles.section}>
-                {/* <div className="intro"> */}
                 <div className={styles.content}>
-                  <div className={styles.logocont}>
+                  <div className={styles.logocont2}>
                     <img
                       className={styles.logo}
                       src="https://i.ibb.co/9T4ft5j/logo.png"
                     />
                   </div>
 
-                  <div className={styles.logocont}>
-                    <img
-                      className={styles.logo2}
-                      src="https://i.ibb.co/9T4ft5j/logo.png"
-                    />
-                  </div>
-
-                  <img
-                    className={styles.bigimgn}
-                    src="https://i.ibb.co/Y3s7XSH/entropy-link.png"
-                  />
-
-                  {/* <div className={styles.blurtopcont}>
-    <img className={styles.blurtop} src="https://i.ibb.co/M7q9767/output-onlinepngtools.png"/>
-    </div> */}
+            
 
                   <CustomView condition={browserName === "Chrome"}>
                     <div className={styles.entropycont}>
@@ -325,10 +355,11 @@ export default function Home({ posts }) {
               </section>
 
               <section className={styles.section}>
-                <div className={styles.content}>
+                {/* <div className={styles.content}> */}
                   {/* <span className={styles.dot}></span> */}
                   {/* <h1 className={styles.entropyraw}>Raw Reality</h1> */}
                   {/* BACK IMG */}
+  
 
                   {/* <div className={styles.test4}></div> */}
                   <CustomView condition={browserName === "Chrome"}>
@@ -362,26 +393,22 @@ export default function Home({ posts }) {
                         src="https://i.ibb.co/yyX4PqP/3.png"
                       />
                       <img
-                        className={styles.man}
+                        className={styles.manchrome}
                         src="https://i.ibb.co/1Jq6bnP/5.png"
                       />
 
-                      <div className={styles.hscrollcont}>
-                        <div className="hscroll">
-                          <img
-                            className={styles.flyingimg}
-                            src="https://i.ibb.co/hLScpnh/13-1-1.png"
-                          />
-                          <p className={styles.titleofprojecthottest}>
-                            Hottest In Da Metaverse
-                          </p>
-                        </div>
-                      </div>
+
+
+
+
+                    
+
+
+
+
 
                       <div className={styles.videocontchrome}>
-                        {/* <iframe className={styles.video} src="https://drive.google.com/file/d/14w2FfWc-LfdUSPoM79y06_sdVXXG_QXa/preview?start=1"></iframe> */}
-                        {/* style="transform: translateY(-38.2813%);" style="position:absolute;top:0;left:0;width:100%;height:100%;" */}
-                        {/* <div class="video-wrapper"><div class="plyr__video-embed__container" > */}
+                   
                         <iframe
                           src="https://player.vimeo.com/video/721799699?h=b659979974?background=1&amp;autoplay=1&amp;muted=1&amp;loop=1&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
                           frameBorder="0"
@@ -394,8 +421,7 @@ export default function Home({ posts }) {
                           allowFullScreen
                           title="fixed metaverse"
                         ></iframe>
-                        {/* <div class="plyr__captions"></div> */}
-                        {/* </div> */}
+                    
                       </div>
 
                       <div className={styles.botflowercont}>
@@ -447,21 +473,7 @@ export default function Home({ posts }) {
                         src="https://i.ibb.co/1Jq6bnP/5.png"
                       />
 
-                      <div className={styles.hscrollcont}>
-                        {/* <div className={styles.hscroll}> */}
-                        <div className="hscroll">
-                          <img
-                            className={styles.flyingimg}
-                            src="https://i.ibb.co/hLScpnh/13-1-1.png"
-                          />
-                          <p>
-                            <span className={styles.titleofprojecthottest}>
-                              Hottest In Da Metaverse
-                            </span>
-                          </p>
-                          {/* </div>  */}
-                        </div>
-                      </div>
+                   
 
                       <div className={styles.videocont}>
                         {/* <iframe className={styles.video} src="https://drive.google.com/file/d/14w2FfWc-LfdUSPoM79y06_sdVXXG_QXa/preview?start=1"></iframe> */}
@@ -532,21 +544,7 @@ export default function Home({ posts }) {
                         src="https://i.ibb.co/1Jq6bnP/5.png"
                       />
 
-                      <div className={styles.hscrollcont}>
-                        <div className={styles.hscroll}>
-                          <div className="hscroll">
-                            <img
-                              className={styles.flyingimg}
-                              src="https://i.ibb.co/hLScpnh/13-1-1.png"
-                            />
-                            <p>
-                              <span className={styles.titleofprojecthottest}>
-                                Hottest In Da Metaverse
-                              </span>
-                            </p>
-                          </div>
-                        </div>
-                      </div>
+                     
 
                       <div className={styles.videocont}>
                         {/* <iframe className={styles.video} src="https://drive.google.com/file/d/14w2FfWc-LfdUSPoM79y06_sdVXXG_QXa/preview?start=1"></iframe> */}
@@ -581,57 +579,13 @@ export default function Home({ posts }) {
                       />
                     </div>
                   </CustomView>
-                </div>
+                {/* </div> */}
               </section>
 
 
 
 
-              {/* <section className={styles.vidsection}> 
-<div className={styles.containerflyingimg}>
-  <div className="hscroll">
-        <img className={styles.flyingimg} src="https://i.ibb.co/9ZNbgcj/13.png"/>
-        {mappedPosts.length ? mappedPosts.map((p, index) => (
-            <div onClick={() => router.push(`/nineth/${p.slug.current}`)} key={index}>
-                        <p><span className={styles.titleofprojecthottest}>{p.titleofproject9}</span></p>
-                      </div>
-             )) : <>No Posts Yet</>}
-        </div> 
-        </div>
-
-        <iframe className={styles.video}src="https://drive.google.com/file/d/14w2FfWc-LfdUSPoM79y06_sdVXXG_QXa/preview?start=1"></iframe>
-</section> */}
-
-              {/* <img className={styles.flower1n} src="https://i.ibb.co/yyX4PqP/3.png"/> */}
-
-              {/* {mappedPosts.length ? mappedPosts.map((p, index) => (
-            <div onClick={() => router.push(`/secondtwo/${p.slug.current}`)} key={index}>
-                      <div className={styles.containerproject2}>
-                        <img  className={styles.mainImage2} src={p.mainImagesecondtwo} />
-                        <p><span className={styles.titleofprojectsn}>{p.titleofprojecttwo}</span></p>
-                  </div>
-            </div> 
-            
-          )) : <>No Posts Yet</>} */}
-
-              {/* {mappedPosts.length ? mappedPosts.map((p, index) => (
-            <div onClick={() => router.push(`/third/${p.slug.current}`)} key={index}>
-                      <div className={styles.containerproject2}>
-                        <img  className={styles.notsoImage} src={p.mainImage3} />
-                        <p><span className={styles.titleofnotsoImage}>{p.titleofproject3}</span></p>
-                      </div>
-            </div>
-          )) : <>No Posts Yet</>}
-
-
-{mappedPosts.length ? mappedPosts.map((p, index) => (
-            <div onClick={() => router.push(`/fifth/${p.slug.current}`)} key={index}>
-                      <div className={styles.containerproject2}>
-                        <img  className={styles.notsoImage} src={p.mainImage5} />
-                        <p><span className={styles.titleofprojectsn3}>{p.titleofproject5}</span></p>
-                      </div>
-            </div>
-          )) : <>No Posts Yet</>} */}
+        
 
               <footer className={styles.footer}>
                 <div className="pb-40 inline-grid grid-cols-2">
@@ -639,7 +593,7 @@ export default function Home({ posts }) {
                   <div className="px-1">
                     <ul className="list-none font-light text-left">
                       <p className=" text-left ">Contact me :)</p>
-                      <li>xinyu.c.contact@gmail.com</li>
+                      <li>Xinyu.c.contact@gmail.com</li>
                       <a
                         href="https://www.instagram.com/chuangxyyy/"
                         data-location="internal"
@@ -663,11 +617,7 @@ export default function Home({ posts }) {
             </main>
           </BrowserView>
 
-          {/* <footer className={styles.footer}>
-
-      <p>© XINYU Chuang 2021</p>
-
-      </footer> */}
+          
         </>
       ) : (
         <div className="w-screen h-screen bg-black flex justify-center items-center">

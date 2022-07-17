@@ -77,7 +77,7 @@ export const Post = ({ titleofproject, mainImagefirsttwo, images }) => {
  <div>
       <Head>
         <title>{titleofproject}</title>
-        <meta name="description" content="XINYU Chuang portfolio" />
+        <meta name="description" content="Xinyu Chuang portfolio" />
         <link rel="icon" href="/favicon.ico" />
         {/* <link rel="icon" href="https://i.ibb.co/9T4ft5j/logo.png" /> */}
         <script
@@ -144,7 +144,7 @@ export const Post = ({ titleofproject, mainImagefirsttwo, images }) => {
               <div className={styles.tlabel}>
                 <div className={styles.headeredition}>
                   <a href="../" data-location="internal">
-                    2022 XINYU CHUANG 
+                    2022 Xinyu CHUANG 
                   </a>
                 </div>
                 <div>__</div>
@@ -227,7 +227,7 @@ export const Post = ({ titleofproject, mainImagefirsttwo, images }) => {
               <div className={styles.tlabel}>
                 <div className={styles.headeredition}>
                   <a href="../" data-location="internal">
-                    2022 XINYU CHUANG 
+                    2022 Xinyu CHUANG 
                   </a>
                 </div>
                 <div>__</div>

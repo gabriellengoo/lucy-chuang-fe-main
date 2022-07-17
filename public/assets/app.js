@@ -20,18 +20,39 @@ gsap.registerPlugin(ScrollTrigger);
 
 
   
-gsap.to('.hscroll', {
-  xPercent: -250,
-  ease: "none",
-  scrollTrigger: {
-    trigger: ".hscroll",
-    start: "top 75%",
-    end: "bottom 25%",
-    scrub: true
-  }
-})
+// gsap.to('.hscroll', {
+//   xPercent: -250,
+//   ease: "none",
+//   scrollTrigger: {
+//     trigger: ".hscroll",
+//     start: "top 75%",
+//     end: "bottom 25%",
+//     scrub: true
+//   }
+// })
 
-// </CustomView>
+// gsap.to('.hscroll', {
+//   xPercent: -150,
+//   ease: "none",
+//   scrollTrigger: {
+//     trigger: ".hscroll",
+//     start: "top center",
+//     end: "bottom top",
+//     scrub: true
+//   }
+// })
+
+$( window ).on('scroll', function(){
+
+  var scrollTop = $(this).scrollTop();
+  $( '.hscroll' ).css({
+    transform: 'translateX('+  ( -1 * scrollTop ) +'px)',
+  });
+
+});
+
+
+// ----------------------------------- time ----------------------------------------------------
 
 
 $(document).ready(function() {

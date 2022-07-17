@@ -41,6 +41,16 @@ color: var(--body-text); */
 /* @tailwind components; */
 @tailwind utilities;
 
+
+@font-face {
+  font-family: "FPTypewriter";
+  src: url('../fonts/Royalacid_o.ttf');
+  font-weight: normal;
+  font-style: italic;
+}
+
+
+
 html {
   /* overflow: hidden; */
   height: 100%;
