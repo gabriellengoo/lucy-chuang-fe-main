@@ -3138,7 +3138,7 @@ mix-blend-mode: exclusion;
 
 
 
-  @media screen and (min-width: 3840px) {
+  @media screen and (min-width: 2560px) {
 
  /* //For 4K Displays (Ultra HD) */
  .test3{
@@ -3157,9 +3157,9 @@ mix-blend-mode: exclusion;
   /* filter: contrast(100%); */
   pointer-events: none;
   width: 100vw;
-  /* background-size: cover;  
+  background-size: cover;  
   background-repeat:   no-repeat;
-  background-position: center center;  */
+  background-position: center center; 
   z-index: 15;
   /* box-shadow: 0px 10px 10px #8cffda, 0px -20px 10px  #8cffda; */
 }
