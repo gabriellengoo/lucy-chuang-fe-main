@@ -2281,7 +2281,7 @@ left: 45vw;
   font-style:normal;
   text-decoration: underline;
   font-style: italic;
-  text-decoration: none;
+  /* text-decoration: none; */
   font-size: 60px;
   width: 95%;
   top: 45vh;
@@ -2318,7 +2318,7 @@ left: 45vw;
   font-style:normal;
   text-decoration: underline;
   font-style: italic;
-  text-decoration: none;
+  /* text-decoration: none; */
   font-size: 60px;
   width: 150%;
   top: 50vh;

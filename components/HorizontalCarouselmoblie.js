@@ -8,7 +8,7 @@ const styles = {
   },
   item: {
     margin: "0px 20px",
-    // width: "80vw",
+    width: "30vw",
     // height: "25vh",
   },
 };
