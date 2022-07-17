@@ -3149,7 +3149,7 @@ mix-blend-mode: exclusion;
   background-image: url("../public/images/backgroundbottompart3.png");
   /* background: linear-gradient(169.78deg, rgba(255, 255, 255, 0.23) 4.65%, rgba(255, 255, 255, 0) 91.48%), radial-gradient(62.3% 67.27% at 20.42% 27.48%, #d4d4d4 0%, #9fadb8c1 100%), linear-gradient(112.91deg, #676561 3.51%, #242321 111.71%); */
   /* height: 935vh; */
-  height: 870vh;
+  height: 770vh;
   position: absolute;
   top: 108vh;
   /* opacity: .8; */
@@ -3271,7 +3271,7 @@ position: relative;
 left: 45vw;
 width: 50%;
 z-index: 500;
-top: -785vh;
+top: -985vh;
 padding-top: 20px;
 padding-bottom: 20px;
 text-decoration-thickness: 1px;

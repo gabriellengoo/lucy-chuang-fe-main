@@ -171,7 +171,7 @@ export const Post = () => {
 
 
       {/* ----------------------------------------------------- here are the images   -----------------------------------------------------  */}
-      <HorizontalCarouselmobile />
+      <HorizontalCarousel />
 
       </div>
       </MobileView>
