@@ -62,7 +62,7 @@ export default function Home({ posts }) {
     <div className={styles.container}>
       <Head>
         <title>Xinyu Chuang</title>
-        <meta name="description" content="Xinyu Chuang portfolio" />
+        <meta name="description" content="Xinyu Chuang" />
         {/* <link rel="icon" href="https://i.ibb.co/9T4ft5j/logo.png" /> */}
         <link rel="icon" href="/favicon.ico" />
 
@@ -73,14 +73,14 @@ export default function Home({ posts }) {
           />
           <meta
             name="description"
-            content="Xinyu Chuang portfolio author: Gabrielle the  Internet Arcitect ©2022 category:application-javascript"
+            content="Xinyu Chuang author: Gabrielle the  Internet Arcitect ©2022 category:application-javascript"
           />
           {/* <meta property="og:url" content="http://niksgames.com/blockland" /> */}
           <meta property="og:type" content="product" />
-          <meta property="og:title" content="Xinyu Chuang portfolio" />
+          <meta property="og:title" content="Xinyu Chuang" />
           <meta
             property="og:description"
-            content="Xinyu Chuang portfolio author:Gabrielle ©2022 category:application-javascript"
+            content="Xinyu Chuang author:Gabrielle ©2022 category:application-javascript"
           />
           <meta
             property="og:image"
@@ -92,7 +92,7 @@ export default function Home({ posts }) {
           />
           <meta property="og:image:width" content={1265} />
           <meta property="og:image:height" content={817} />
-          <meta property="og:image:alt" content="Xinyu Chuang portfolio" />
+          <meta property="og:image:alt" content="Xinyu Chuang" />
         </>
 
         <link rel="apple-touch-icon" href="https://i.ibb.co/9T4ft5j/logo.png" />
@@ -161,14 +161,14 @@ export default function Home({ posts }) {
                 <div className={styles.logocontmobile}>
                   <img
                     className={styles.logomoblie}
-                    src="https://i.ibb.co/9T4ft5j/logo.png"
+                    src="https://i.ibb.co/X3G0Ggs/xinyu.png"
                   />
                 </div>
 
                 <div className={styles.figuren}>
                   <img
                     className={styles.figurenmobile}
-                    src="https://i.ibb.co/Qmy29Fc/foreground-fixed.png"
+                    src="https://i.ibb.co/Zm35Tgq/foreground-fixed-1.png"
                   />
                 </div>
 
@@ -254,7 +254,7 @@ export default function Home({ posts }) {
                         <div className='hscroll'> 
                           <img
                             className={styles.flyingimg}
-                            src="https://i.ibb.co/hLScpnh/13-1-1.png"
+                            src="https://i.ibb.co/Pz74XhT/13-2.png"
                           />
                           <p className={styles.titleofprojecthottest}>
                             Hottest In Da Metaverse
@@ -268,7 +268,7 @@ export default function Home({ posts }) {
                         <div className='hscroll'> 
                           <img
                             className={styles.flyingimg}
-                            src="https://i.ibb.co/hLScpnh/13-1-1.png"
+                            src="https://i.ibb.co/Pz74XhT/13-2.png"
                           />
                           <p className={styles.titleofprojecthottest}>
                             Hottest In Da Metaverse
@@ -282,7 +282,7 @@ export default function Home({ posts }) {
                         <div className='hscroll'> 
                           <img
                             className={styles.flyingimg}
-                            src="https://i.ibb.co/hLScpnh/13-1-1.png"
+                            src="https://i.ibb.co/Pz74XhT/13-2.png"
                           />
                           <p className={styles.titleofprojecthottest}>
                             Hottest In Da Metaverse
@@ -297,7 +297,7 @@ export default function Home({ posts }) {
               <div>
                 <img
                   className={styles.figuren}
-                  src="https://i.ibb.co/Qmy29Fc/foreground-fixed.png"
+                  src="https://i.ibb.co/Zm35Tgq/foreground-fixed-1.png"
                 />
               </div>
           
@@ -306,7 +306,7 @@ export default function Home({ posts }) {
                   <div className={styles.logocont2}>
                     <img
                       className={styles.logo}
-                      src="https://i.ibb.co/9T4ft5j/logo.png"
+                      src="https://i.ibb.co/X3G0Ggs/xinyu.png"
                     />
                   </div>
 
@@ -319,7 +319,9 @@ export default function Home({ posts }) {
                           {" "}
                           entropy entropy entropy entropy entropy entropy
                           entropy entropy entropy entropy entropy entropy
-                          entropy entropy{" "}
+                          entropy entropy entropy entropy entropy entropy 
+                          entropy entropy entropy entropy entropy entropy 
+                          {" "}
                         </Marquee>
                       </p>
                     </div>
@@ -332,7 +334,9 @@ export default function Home({ posts }) {
                           {" "}
                           entropy entropy entropy entropy entropy entropy
                           entropy entropy entropy entropy entropy entropy
-                          entropy entropy{" "}
+                          entropy entropy entropy entropy entropy entropy 
+                          entropy entropy entropy entropy entropy entropy 
+                          {" "}
                         </Marquee>
                       </p>
                     </div>
@@ -345,7 +349,9 @@ export default function Home({ posts }) {
                           {" "}
                           entropy entropy entropy entropy entropy entropy
                           entropy entropy entropy entropy entropy entropy
-                          entropy entropy{" "}
+                          entropy entropy entropy entropy entropy entropy 
+                          entropy entropy entropy entropy entropy entropy 
+                          {" "}
                         </Marquee>
                       </p>
                     </div>
@@ -390,11 +396,11 @@ export default function Home({ posts }) {
 
                       <img
                         className={styles.flower1n}
-                        src="https://i.ibb.co/yyX4PqP/3.png"
+                        src="https://i.ibb.co/fMG3ydn/3-1.png"
                       />
                       <img
                         className={styles.manchrome}
-                        src="https://i.ibb.co/1Jq6bnP/5.png"
+                        src="https://i.ibb.co/kcNgLFB/5-1.png"
                       />
 
 
@@ -427,13 +433,13 @@ export default function Home({ posts }) {
                       <div className={styles.botflowercont}>
                         <img
                           className={styles.botflower}
-                          src="https://i.ibb.co/TDXZH4y/1-2.png"
+                          src="https://i.ibb.co/CBdmDQ9/1-3.png"
                         />
                       </div>
 
                       <img
                         className={styles.flowergreen}
-                        src="https://i.ibb.co/xzd0Kz4/9.png"
+                        src="https://i.ibb.co/dDcN0FP/9-1.png"
                       />
                     </div>
                   </CustomView>
@@ -466,11 +472,11 @@ export default function Home({ posts }) {
 
                       <img
                         className={styles.flower1n}
-                        src="https://i.ibb.co/yyX4PqP/3.png"
+                        src="https://i.ibb.co/fMG3ydn/3-1.png"
                       />
                       <img
                         className={styles.man}
-                        src="https://i.ibb.co/1Jq6bnP/5.png"
+                        src="https://i.ibb.co/kcNgLFB/5-1.png"
                       />
 
                    
@@ -498,13 +504,13 @@ export default function Home({ posts }) {
                       <div className={styles.botflowercontfire}>
                         <img
                           className={styles.botflower}
-                          src="https://i.ibb.co/TDXZH4y/1-2.png"
+                          src="https://i.ibb.co/CBdmDQ9/1-3.png"
                         />
                       </div>
 
                       <img
                         className={styles.flowergreen}
-                        src="https://i.ibb.co/xzd0Kz4/9.png"
+                        src="https://i.ibb.co/dDcN0FP/9-1.png"
                       />
                     </div>
                   </CustomView>
@@ -537,11 +543,11 @@ export default function Home({ posts }) {
 
                       <img
                         className={styles.flower1nsaf}
-                        src="https://i.ibb.co/yyX4PqP/3.png"
+                        src="https://i.ibb.co/fMG3ydn/3-1.png"
                       />
                       <img
                         className={styles.man}
-                        src="https://i.ibb.co/1Jq6bnP/5.png"
+                        src="https://i.ibb.co/kcNgLFB/5-1.png"
                       />
 
                      
@@ -569,13 +575,13 @@ export default function Home({ posts }) {
                       <div className={styles.botflowercontsaf}>
                         <img
                           className={styles.botflower}
-                          src="https://i.ibb.co/TDXZH4y/1-2.png"
+                          src="https://i.ibb.co/CBdmDQ9/1-3.png"
                         />
                       </div>
 
                       <img
                         className={styles.flowergreensaf}
-                        src="https://i.ibb.co/xzd0Kz4/9.png"
+                        src="https://i.ibb.co/dDcN0FP/9-1.png"
                       />
                     </div>
                   </CustomView>
