@@ -1059,7 +1059,7 @@ position: reletive;
   /* bottom: 1000vh; */
     /* left: 27vw; */
     /* top: -410vh; */
-    top: -410vh;
+    top: -448vh;
     /* botom: 1000vh; */
     left: 15vw;
 }
@@ -1492,34 +1492,28 @@ position:relative;
 
 
 .videocontsaf{
-  /* padding-top: 50vh; */
-  /* padding-left: 5rem; */
-  /* left: -40vw; */
-  /* position: absolute; */
-  /* height: 50vw; */
-  /* padding-top: 50vh; */
-  /* padding-left: 5rem; */
-  /* height: 102.5vh;
-  width: 100vw; */
   z-index:-1;
-  /* z-index: 100; */
   border: none;
   position: relative;
-  /* position: absolute; */
-  /* top: -520vh; */
   top: -490vh;
-  /* padding-top: 300px; */
   width: 100vw;
   height: 100vh;
   -webkit-transform: translateY(-38.2779%);
       -ms-transform: translateY(-38.2779%);
           transform: translateY(-38.2779%);
           pointer-events: none;
-  
-
-  /* position:absolute;top:0;left:0;width:100%;height:100%; */
 }
 
+
+.videocontsaf > iframe {
+  width:120%; 
+  height:180%; 
+  position:absolute; 
+  left:-10vh; 
+  /* top:-40%;  */
+  z-index:-1;
+  pointer-events: none;
+  }
 
 
 .videocont > iframe {
@@ -1534,7 +1528,6 @@ position:relative;
 
 
   .videocontchrome{
-    
   z-index:-1;
   /* z-index: 100; */
   border: none;
@@ -3185,6 +3178,7 @@ mix-blend-mode: exclusion;
     /* overflow: hidden; */
     text-underline-offset: .5rem;
   }
+
   
 
   .manchrome{
@@ -3641,6 +3635,19 @@ mix-blend-mode: exclusion;
           -ms-transform: rotate(345deg);
               transform: rotate(345deg);
     }
+
+
+    .hscrollcont{ 
+      z-index: 1100 !important;
+        position: absolute;
+        left: 250vw;
+        top: 470vh;
+        padding-left: 5rem;
+        height: 30vh;
+        width: 100%;
+        font-family: serif;
+    }
+    
 }
 
 
