@@ -12,6 +12,9 @@
 }
 
 
+ /* -----------  -----------  ----------- Desktops and laptops  ----------- ----------- ----------- */
+
+
 .test{
   --bg-gradient: linear-gradient(169.78deg, rgba(255, 255, 255, 0.23) 4.65%, rgba(255, 255, 255, 0) 91.48%), radial-gradient(62.3% 67.27% at 20.42% 27.48%, #5E4B1E 0%, #2B2A28 100%), linear-gradient(112.91deg, #676561 3.51%, #242321 111.71%);
 --body-text: #f0efeb;
@@ -2201,24 +2204,14 @@ left: 45vw;
 
 
 .wrappersafari{
-  /* background: #212121; */
-  /* line-height: 50px; */
-  /* height: 50px; */
-  /* margin: 5px; */
-  /* text-align: center; */
   position: relative;
   z-index: 100;
   width: 100vw;
   top:30vh;
-  /* height: fit-content; */
   height: 575vh;
-  /* height: 700vh; */
-  /* border-bottom: 1px solid rgb(255, 255, 255); */
-  /* -webkit-decoration-thickness: 1px; */
   text-decoration-thickness: 1px;
   -moz-text-decoration-thickness: 1px;
   -webkit-text-decoration-thickness: 1px;
-  /* overflow: hidden; */
   text-underline-offset: .5rem;
 }
 
@@ -2892,18 +2885,6 @@ text-decoration-thickness: 1px;
 
 
 
-
-
-/* ----------------- certian screens ------------------------ */
-
- 
-
-
-
-
-
-
-
 /* -----------------mobile ------------------------ */
 
 .wrappermobile {
@@ -3070,15 +3051,19 @@ mix-blend-mode: exclusion;
 
 
 
-  /*------------------------ ------------------------  Large devices (laptops/desktops, 992px and up) */
-/* @media only screen and (min-width: 992px) {
-
-  
-} */
 
 
 
-/* ------------------------ ------------------------ Extra large devices (large laptops and desktops, 1200px and up) */
+
+
+
+
+
+
+
+
+
+/* ------------------------ ------------------------ /* Large screens ----------- */
 @media only screen and (min-width: 1920px) {
   .test3{
     --bg-gradient: linear-gradient(169.78deg, rgba(255, 255, 255, 0.23) 4.65%, rgba(255, 255, 255, 0) 91.48%), radial-gradient(62.3% 67.27% at 20.42% 27.48%, #5E4B1E 0%, #2B2A28 100%), linear-gradient(112.91deg, #676561 3.51%, #242321 111.71%);
@@ -3112,7 +3097,7 @@ mix-blend-mode: exclusion;
     background-image: url("../public/images/backgroundbottompart3.png");
     /* background: linear-gradient(169.78deg, rgba(255, 255, 255, 0.23) 4.65%, rgba(255, 255, 255, 0) 91.48%), radial-gradient(62.3% 67.27% at 20.42% 27.48%, #d4d4d4 0%, #9fadb8c1 100%), linear-gradient(112.91deg, #676561 3.51%, #242321 111.71%); */
     /* height: 935vh; */
-    height: 640vh;
+    height: 660vh;
     position: absolute;
     top: 75vh;
     /* opacity: .8; */
@@ -3502,7 +3487,7 @@ mix-blend-mode: exclusion;
       z-index:-1;
       border: none;
       position: relative;
-      top: -510vh;
+      top: -520vh;
       width: 100vw;
       height: 100vh;
       -webkit-transform: translateY(-38.2779%);
@@ -3595,24 +3580,14 @@ mix-blend-mode: exclusion;
 
 
       .wrappersafari{
-        /* background: #ddd; */
-        /* line-height: 50px; */
-        /* height: 50px; */
-        /* margin: 5px; */
-        /* text-align: center; */
         position: relative;
         z-index: 100;
         width: 100vw;
         top:30vh;
-        /* height: fit-content; */
-        height: 700vh;
-        /* height: 700vh; */
-        /* border-bottom: 1px solid rgb(255, 255, 255); */
-        /* -webkit-decoration-thickness: 1px; */
+        height: 600vh;
         text-decoration-thickness: 1px;
         -moz-text-decoration-thickness: 1px;
         -webkit-text-decoration-thickness: 1px;
-        /* overflow: hidden; */
         text-underline-offset: .5rem;
       }
 
@@ -3648,6 +3623,16 @@ mix-blend-mode: exclusion;
         font-family: serif;
     }
     
+
+    /*  blue blob */
+    .wrappersafari > div:nth-child(5) {
+      position: relative;
+      top: -350vh;
+      left: 25vw;
+      width: 60%;
+    }
+
+
 }
 
 
