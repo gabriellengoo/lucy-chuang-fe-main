@@ -552,7 +552,7 @@ export default function Home({ posts }) {
 
                      
 
-                      <div className={styles.videocont}>
+                      <div className={styles.videocontsaf}>
                         {/* <iframe className={styles.video} src="https://drive.google.com/file/d/14w2FfWc-LfdUSPoM79y06_sdVXXG_QXa/preview?start=1"></iframe> */}
                         {/* style="transform: translateY(-38.2813%);" style="position:absolute;top:0;left:0;width:100%;height:100%;" */}
                         {/* <div class="video-wrapper"><div class="plyr__video-embed__container" > */}
