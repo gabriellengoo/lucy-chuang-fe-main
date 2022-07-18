@@ -9,7 +9,7 @@
 
 
  /* 
-
+test theory
  ---- 13.3" ( my Macbook laptop ) = 2560px
  ---- 15.4" ( bigger Macbooks laptop ) = 2880px
  ---- 21.5" most desktop and IMac size = 1921px
@@ -29,7 +29,7 @@
 
 
 
-@media only screen and (min-width: 2560px) {
+
  /* -----------  -----------  ----------- Desktops and laptops  ----------- ----------- ----------- */
 
 
@@ -2877,7 +2877,6 @@ text-decoration-thickness: 1px;
   font-style: italic;
 }
 
-}
 
 
 
