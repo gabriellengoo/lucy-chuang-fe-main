@@ -38,9 +38,9 @@ test theory
   --bg-gradient: linear-gradient(169.78deg, rgba(255, 255, 255, 0.23) 4.65%, rgba(255, 255, 255, 0) 91.48%), radial-gradient(62.3% 67.27% at 20.42% 27.48%, #5E4B1E 0%, #2B2A28 100%), linear-gradient(112.91deg, #676561 3.51%, #242321 111.71%);
 --body-text: #f0efeb;
   background-image: url("../public/images/backgroundbottompart3.png");
-  /* height: 710vh; */
+  height: 710vh;
   position: absolute;
-  /* top: 75vh; */
+  top: 75vh;
   pointer-events: none;
   width: 100vw;
   z-index: 15;
@@ -128,9 +128,9 @@ test theory
   position: relative;
   z-index: 100;
   width: 100vw;
-  /* top:30vh; */
+  top:30vh;
   /* height: fit-content; */
-  /* height: 640vh; */
+  height: 640vh;
   text-decoration-thickness: 1px;
   -moz-text-decoration-thickness: 1px;
   -webkit-text-decoration-thickness: 1px;
@@ -360,6 +360,8 @@ top: 90vh;
 /* blue */
 .wrapper > div:nth-child(7) {
   position: absolute;
+  top: 270vh;
+  left: 40vw;
   width: 60%;
 }
 
@@ -367,7 +369,8 @@ top: 90vh;
 .wrapper > div:nth-child(7) > p:nth-child(2) {
   position: absolute;
   text-decoration-thickness: 1px;
-
+top: 0vh;
+left: 2vw;
 color: #510202;
 font-family: serif;
 font-size:48px;
@@ -378,13 +381,18 @@ z-index: 400;
 
 .wrapper > div:nth-child(7) > img:nth-child(1) {
   position: relative;
- 
+  top: -20vh;
+  z-index: 400;
+    left: -15vw;
 }
 
 
 /* big head */
 .wrapper > div:nth-child(8) {
   position: absolute;
+  top: 480vh;
+  left: -5vw;
+  width: 60%;
   animation: none !important;
   -webkit-animation: none !important;
 }
@@ -408,11 +416,13 @@ text-decoration-thickness: 1px;
 
 
 
-/* head */
+/* white blob */
 .wrapper > div:nth-child(8) > p:nth-child(2) {
   /* color: rgb(255, 0, 0); */
       text-decoration-thickness: 1px;
   font-size: 42px; font-size: calc(40px + 0.390625vw);
+  top: 0vh;
+  left: 60%;
   z-index: 400;
   position: absolute;
   color: rgb(255, 102, 186);
@@ -424,7 +434,8 @@ text-decoration-thickness: 1px;
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   /* width: 200vw; */
-
+  top: 35%;
+    left: 49%;
   text-decoration: underline;
   z-index: 400 !important;
   padding-top: 20px;
@@ -684,7 +695,8 @@ position: absolute;
 
 .botflowercont{
   position: absolute;
-
+  top:399vh;
+  left: 15vw;
 }
 
 
@@ -784,7 +796,7 @@ position: absolute;
 .entropycont{
   font-size:5vh;
   font-size: calc(40px + 0.390625vw); 
-  /* top: 113vh; */
+  top: 113vh;
   left: -5%;
   z-index: 200;
   /* position:relative; */
@@ -899,7 +911,24 @@ position: absolute;
 
 
 
-
+.titleofprojecthottest{
+  /* position: absolute; */
+  /* top: -39vh; */
+  /* left: 61vw; */
+  /* transform: translate(-50%, -50%); */
+  /* line-height: 36px; */
+  font-weight: 300;
+  font-style: italic;
+  text-decoration: underline;
+  font-size: 67px; font-size: calc(67px + 0.390625vw);
+  width: 100%;
+  color: #ffffff;
+  position: relative;
+  top: -45vh;
+  left: 55vw;
+  text-decoration-thickness: 1px;
+  /* transform: rotate(34deg); */
+}
 
 
 .flyingimg{
@@ -908,7 +937,16 @@ position: absolute;
   overflow: hidden;
 }
 
-
+.hscrollcont{ 
+  z-index: 1100 !important;
+    position: absolute;
+    left: 250vw;
+    top: 440vh;
+    padding-left: 5rem;
+    height: 30vh;
+    width: 100%;
+    font-family: serif;
+}
 
 .hscrollcontfire{ 
   z-index: 1100 !important;
@@ -2325,150 +2363,8 @@ mix-blend-mode: exclusion;
 /* ------------------------ ------------------------ /* Large screens ----------- */
 
 
-@media only screen and (min-width:1024px) and (max-width:1899px) {
 
-  .wrapper{
-    position: relative;
-    z-index: 100;
-    width: 100vw;
-    top:30vh;
-    /* height: fit-content; */
-    height: 640vh;
-    text-decoration-thickness: 1px;
-    -moz-text-decoration-thickness: 1px;
-    -webkit-text-decoration-thickness: 1px;
-    /* overflow: hidden; */
-    text-underline-offset: .5rem;
-  }
-
-  .test3{
-    --bg-gradient: linear-gradient(169.78deg, rgba(255, 255, 255, 0.23) 4.65%, rgba(255, 255, 255, 0) 91.48%), radial-gradient(62.3% 67.27% at 20.42% 27.48%, #5E4B1E 0%, #2B2A28 100%), linear-gradient(112.91deg, #676561 3.51%, #242321 111.71%);
-  --body-text: #f0efeb;
-    background-image: url("../public/images/backgroundbottompart3.png");
-    height: 710vh;
-    position: absolute;
-    top: 75vh;
-    pointer-events: none;
-    width: 100vw;
-    z-index: 15;
-  }
-
-
-  .botflowercont{
-    position: absolute;
-    top:399vh;
-    left: 15vw;
-  }
-  
-
-  .entropycont{
-    font-size:5vh;
-    font-size: calc(40px + 0.390625vw); 
-    top: 113vh;
-    left: -5%;
-    z-index: 200;
-    /* position:relative; */
-    color: rgb(255, 102, 186);
-    color: #ff85c7;
-    font-weight: 500;
-    font-style: italic;
-    overflow-x: hidden;
-    /* text-align: center; */
-    width: 120vw;
-    font-family: serif;
-    /* text-decoration: underline; */
-    overflow-x:hidden;
-    position: absolute;
-  }
-
-  .hscrollcont{ 
-    z-index: 1100 !important;
-      position: absolute;
-      left: 250vw;
-      top: 440vh;
-      padding-left: 5rem;
-      height: 30vh;
-      width: 100%;
-      font-family: serif;
-  }
-
-
-  .titleofprojecthottest{
-    /* position: absolute; */
-    /* top: -39vh; */
-    /* left: 61vw; */
-    /* transform: translate(-50%, -50%); */
-    /* line-height: 36px; */
-    font-weight: 300;
-    font-style: italic;
-    text-decoration: underline;
-    font-size: 67px; font-size: calc(67px + 0.390625vw);
-    width: 100%;
-    color: #ffffff;
-    position: relative;
-    text-decoration-thickness: 1px;
-    /* transform: rotate(34deg); */
-  }
-
-
-    /* big head */
-    .wrapper > div:nth-child(8) {
-      top: 480vh;
-      left: -5vw;
-      width: 60%;
-    }
-
-    /* blue */
-.wrapper > div:nth-child(7) > p:nth-child(2) {
-  position: absolute;
-  text-decoration-thickness: 1px;
-top: 0vh;
-left: 2vw;
-color: #510202;
-font-family: serif;
-font-size:48px;
-font-size: calc(30px + 0.390625vw);    
-font-style: normal;
-z-index: 400;
-}
-
-.wrapper > div:nth-child(7) > img:nth-child(1) {
-  position: relative;
-  top: -20vh;
-  z-index: 400;
-    left: -15vw;
-}
-
-.wrapper > div:nth-child(7) {
-  position: absolute;
-  top: 270vh;
-  left: 40vw;
-  width: 60%;
-}
-
-
-
-  
-}
-
-
-
-
-@media only screen and (min-width:1900px) {
-
-  .wrapper{
-    position: relative;
-    z-index: 100;
-    width: 100vw;
-    top:30vh;
-    /* height: fit-content; */
-    height: 640vh;
-    text-decoration-thickness: 1px;
-    -moz-text-decoration-thickness: 1px;
-    -webkit-text-decoration-thickness: 1px;
-    /* overflow: hidden; */
-    text-underline-offset: .5rem;
-  }
+@media screen and (min-width: 1920px) {
   
     /* .botflowercontsaf{
       position: relative;
