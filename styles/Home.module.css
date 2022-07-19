@@ -796,7 +796,7 @@ position: absolute;
 .entropycont{
   font-size:5vh;
   font-size: calc(40px + 0.390625vw); 
-  top: 120vh;
+  top: 113vh;
   left: -5%;
   z-index: 200;
   /* position:relative; */
@@ -2471,12 +2471,6 @@ mix-blend-mode: exclusion;
   }
 
 
-  .botflowercont{
-    position: absolute;
-    top:406vh;
-    left: 15vw;
-  }
-
 
   /* raw reality */
   .wrapper > div:nth-child(1) {
@@ -2544,6 +2538,12 @@ mix-blend-mode: exclusion;
       animation: none !important;
       -webkit-animation: none !important;
     }
+
+      .botflowercont{
+    position: absolute;
+    top:406vh;
+    left: 15vw;
+  }
 
 
     .wrapper > div:nth-child(3) > p:nth-child(2) {
