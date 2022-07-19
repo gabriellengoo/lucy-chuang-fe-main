@@ -278,7 +278,7 @@ export default function Home({ posts }) {
                   </CustomView>  
 
                    <CustomView condition={browserName === "Safari"}>
-                    <div className={styles.hscrollcontsaf}>
+                    <div className={styles.hscrollcont}>
                         <div className='hscroll'> 
                           <img
                             className={styles.flyingimg}
@@ -343,7 +343,7 @@ export default function Home({ posts }) {
                   </CustomView>
 
                   <CustomView condition={browserName === "Safari"}>
-                    <div className={styles.entropycontsaf}>
+                    <div className={styles.entropycont}>
                       <p className={styles.entropy}>
                         <Marquee>
                           {" "}
@@ -516,8 +516,8 @@ export default function Home({ posts }) {
                   </CustomView>
 
                   <CustomView condition={browserName === "Safari"}>
-                    <div className={styles.test3saf}></div>
-                    <div className={styles.wrappersafari}>
+                    <div className={styles.test3}></div>
+                    <div className={styles.wrapper}>
                       {mappedPosts.length ? (
                         mappedPosts.map((p, id) => (
                           <div
@@ -542,7 +542,7 @@ export default function Home({ posts }) {
                       )}
 
                       <img
-                        className={styles.flower1nsaf}
+                        className={styles.flower1n}
                         src="https://i.ibb.co/fMG3ydn/3-1.png"
                       />
                       <img
@@ -552,7 +552,7 @@ export default function Home({ posts }) {
 
                      
 
-                      <div className={styles.videocontsaf}>
+                      <div className={styles.videocont}>
                         {/* <iframe className={styles.video} src="https://drive.google.com/file/d/14w2FfWc-LfdUSPoM79y06_sdVXXG_QXa/preview?start=1"></iframe> */}
                         {/* style="transform: translateY(-38.2813%);" style="position:absolute;top:0;left:0;width:100%;height:100%;" */}
                         {/* <div class="video-wrapper"><div class="plyr__video-embed__container" > */}
@@ -572,7 +572,7 @@ export default function Home({ posts }) {
                         {/* </div> */}
                       </div>
 
-                      <div className={styles.botflowercontsaf}>
+                      <div className={styles.botflowercont}>
                         <img
                           className={styles.botflower}
                           src="https://i.ibb.co/CBdmDQ9/1-3.png"
@@ -580,7 +580,7 @@ export default function Home({ posts }) {
                       </div>
 
                       <img
-                        className={styles.flowergreensaf}
+                        className={styles.flowergreen}
                         src="https://i.ibb.co/dDcN0FP/9-1.png"
                       />
                     </div>
