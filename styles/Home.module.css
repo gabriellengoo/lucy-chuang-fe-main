@@ -398,7 +398,7 @@ z-index: 400;
 .wrapper > div:nth-child(8) {
   position: absolute;
   /* top: 480vh; */
-  bottom: 155px;
+  /* bottom: 155px; */
   left: -5vw;
   width: 60%;
   animation: none !important;
@@ -705,9 +705,9 @@ position: absolute;
   position: absolute;
   /* top:399vh; */
   width: 90%;
-  /* bottom: 50px; */
+  bottom: 0px;
   left: 20vw;
-  bottom: 155px;
+  /* bottom: 155px; */
 }
 
 
@@ -2448,7 +2448,7 @@ mix-blend-mode: exclusion;
         /* top: 473vh; */
         left: -5vw;
         width: 60%;
-        bottom: 155px;
+        /* bottom: 155px; */
         animation: none !important;
         -webkit-animation: none !important;
       }
@@ -2545,9 +2545,9 @@ mix-blend-mode: exclusion;
     .wrapper > div:nth-child(8) {
       position: absolute;
       /* top: 475vh; */
-      bottom: 50px;
+      bottom: 0px;
       left: -5vw;
-      bottom: 155px;
+      /* bottom: 155px; */
       animation: none !important;
       -webkit-animation: none !important;
     }
@@ -2556,7 +2556,8 @@ mix-blend-mode: exclusion;
     position: absolute;
     /* top:406vh; */
     width: 90%;
-    bottom: 155px;
+    /* bottom: 155px; */
+    bottom: 0px;
   left: 20vw;
   }
 
@@ -2598,7 +2599,8 @@ mix-blend-mode: exclusion;
       position: absolute;
       /* top:415vh; */
       width: 90%;
-      bottom: 155px;
+      /* bottom: 155px; */
+      bottom: 0px;
       left: 20vw;
     }
 
@@ -2679,7 +2681,7 @@ mix-blend-mode: exclusion;
       .wrapper > div:nth-child(8) {
         position: absolute;
         /* top: 489vh; */
-        bottom: 155px;
+        /* bottom: 155px; */
         left: -5vw;
         width: 60%;
         animation: none !important;
@@ -2749,16 +2751,14 @@ mix-blend-mode: exclusion;
         }
 
 
-           /* big head */
-          .wrapper > div:nth-child(8) {
-            top: 479vh;
-          }
+          
 
       .botflowercont{
         position: absolute;
         /* top:390vh; */
         width: 90%;
-        bottom: 155px;
+        /* bottom: 155px; */
+        bottom: 0px;
         left: 20vw;
       }
     
