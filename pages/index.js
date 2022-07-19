@@ -291,6 +291,17 @@ export default function Home({ posts }) {
                       </div>
                   </CustomView>   
 
+                  <div className={styles.hscrollcont}>
+                        <div className='hscroll'> 
+                          <img
+                            className={styles.flyingimg}
+                            src="https://i.ibb.co/Pz74XhT/13-2.png"
+                          />
+                          <p className={styles.titleofprojecthottest}>
+                            Hottest In Da Metaverse
+                          </p>
+                        </div>
+                      </div>
 
 
 
@@ -356,6 +367,21 @@ export default function Home({ posts }) {
                       </p>
                     </div>
                   </CustomView>
+
+
+                  <div className={styles.entropycont}>
+                      <p className={styles.entropy}>
+                        <Marquee>
+                          {" "}
+                          entropy entropy entropy entropy entropy entropy
+                          entropy entropy entropy entropy entropy entropy
+                          entropy entropy entropy entropy entropy entropy 
+                          entropy entropy entropy entropy entropy entropy 
+                          {" "}
+                        </Marquee>
+                      </p>
+                    </div>
+
                 </div>
                 {/* </div>  */}
               </section>
@@ -366,6 +392,80 @@ export default function Home({ posts }) {
                   {/* <h1 className={styles.entropyraw}>Raw Reality</h1> */}
                   {/* BACK IMG */}
   
+
+                  <div className={styles.test3}></div>
+                    <div className={styles.wrapper}>
+                      {mappedPosts.length ? (
+                        mappedPosts.map((p, id) => (
+                          <div
+                            onClick={() =>
+                              router.push(`/projects/${p.slug.current}`)
+                            }
+                            key={id}
+                          >
+                            {/* <div className={styles.containerproject2}> */}
+                            <img
+                              className={styles.mainImage2}
+                              src={p.mainImagefirsttwo}
+                            />
+                            <p className={styles.fontstyle}>
+                              {p.titleofproject}
+                            </p>
+                          </div>
+                          // </div>
+                        ))
+                      ) : (
+                        <>No Posts Yet</>
+                      )}
+
+                      <img
+                        className={styles.flower1n}
+                        src="https://i.ibb.co/fMG3ydn/3-1.png"
+                      />
+                      <img
+                        className={styles.manchrome}
+                        src="https://i.ibb.co/kcNgLFB/5-1.png"
+                      />
+
+
+
+
+
+                    
+
+
+
+
+
+                      <div className={styles.videocontchrome}>
+                   
+                        <iframe
+                          src="https://player.vimeo.com/video/721799699?h=b659979974?background=1&amp;autoplay=1&amp;muted=1&amp;loop=1&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                          frameBorder="0"
+                          className={styles.video}
+                          allow="autoplay; fullscreen; picture-in-picture; loop=1; muted=1"
+                          id="video"
+                          muted
+                          webkitallowfullscreen
+                          mozallowfullscreen
+                          allowFullScreen
+                          title="fixed metaverse"
+                        ></iframe>
+                    
+                      </div>
+
+                      <div className={styles.botflowercont}>
+                        <img
+                          className={styles.botflower}
+                          src="https://i.ibb.co/CBdmDQ9/1-3.png"
+                        />
+                      </div>
+
+                      <img
+                        className={styles.flowergreen}
+                        src="https://i.ibb.co/dDcN0FP/9-1.png"
+                      />
+                    </div>
 
                   {/* <div className={styles.test4}></div> */}
                   <CustomView condition={browserName === "Chrome"}>
@@ -553,9 +653,6 @@ export default function Home({ posts }) {
                      
 
                       <div className={styles.videocont}>
-                        {/* <iframe className={styles.video} src="https://drive.google.com/file/d/14w2FfWc-LfdUSPoM79y06_sdVXXG_QXa/preview?start=1"></iframe> */}
-                        {/* style="transform: translateY(-38.2813%);" style="position:absolute;top:0;left:0;width:100%;height:100%;" */}
-                        {/* <div class="video-wrapper"><div class="plyr__video-embed__container" > */}
                         <iframe
                           src="https://player.vimeo.com/video/721799699?h=b659979974?background=1&amp;autoplay=1&amp;muted=1&amp;loop=1&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
                           frameBorder="0"
