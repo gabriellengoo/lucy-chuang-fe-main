@@ -264,7 +264,7 @@ export default function Home({ posts }) {
                   </CustomView>   
 
                   <CustomView condition={browserName === "Firefox"}>
-                    <div className={styles.hscrollcontfire}>
+                    <div className={styles.hscrollcont}>
                         <div className='hscroll'> 
                           <img
                             className={styles.flyingimg}
@@ -328,8 +328,8 @@ export default function Home({ posts }) {
                   </CustomView>
 
                   <CustomView condition={browserName === "Firefox"}>
-                    <div className={styles.entropycontfire}>
-                      <p className={styles.entropyfire}>
+                    <div className={styles.entropycont}>
+                      <p className={styles.entropy}>
                         <Marquee>
                           {" "}
                           entropy entropy entropy entropy entropy entropy
@@ -445,8 +445,8 @@ export default function Home({ posts }) {
                   </CustomView>
 
                   <CustomView condition={browserName === "Firefox"}>
-                    <div className={styles.test3fire}></div>
-                    <div className={styles.wrapperfire}>
+                    <div className={styles.test3}></div>
+                    <div className={styles.wrapper}>
                       {mappedPosts.length ? (
                         mappedPosts.map((p, id) => (
                           <div
@@ -501,7 +501,7 @@ export default function Home({ posts }) {
                         {/* </div> */}
                       </div>
 
-                      <div className={styles.botflowercontfire}>
+                      <div className={styles.botflowercont}>
                         <img
                           className={styles.botflower}
                           src="https://i.ibb.co/CBdmDQ9/1-3.png"
