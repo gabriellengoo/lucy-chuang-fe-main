@@ -2370,7 +2370,7 @@ mix-blend-mode: exclusion;
     } */
 
     .entropycont{
-      top: 106vh;
+      top: 105vh;
     }
 
 
@@ -2571,7 +2571,7 @@ mix-blend-mode: exclusion;
 
 
 
-  @media only screen and (min-width: 2560px) and (min-height: 1600px) {
+  @media only screen and (min-width: 2560px) and (max-height: 1600px) {
   
 
     .entropycont{
