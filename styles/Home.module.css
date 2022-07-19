@@ -2697,6 +2697,9 @@ mix-blend-mode: exclusion;
 
     @media only screen and (min-width: 1600px) and (max-height: 1200px) {
   
+      .test3{
+        height: 670vh;
+      }
 
       .entropycont{
         top: 102vh;
@@ -2709,16 +2712,9 @@ mix-blend-mode: exclusion;
 
          /* blue */
          .wrapper > div:nth-child(7) > p:nth-child(2) {
-          position: absolute;
-          text-decoration-thickness: 1px;
+         
         top: -4vh;
-        left: 6vw;
-        color: #510202;
-        font-family: serif;
-        font-size:48px;
-        font-size: calc(30px + 0.390625vw);    
-        font-style: normal;
-        z-index: 400;
+       
         }
 
 
@@ -2737,7 +2733,13 @@ mix-blend-mode: exclusion;
 
            /* big head */
       .wrapper > div:nth-child(8) {
-        top: 483vh;
+        top: 479vh;
+      }
+
+      .botflowercont{
+        position: absolute;
+        top:390vh;
+        left: 15vw;
       }
     
     
