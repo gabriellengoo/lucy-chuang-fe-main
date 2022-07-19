@@ -399,6 +399,7 @@ z-index: 400;
   position: absolute;
   /* top: 480vh; */
   /* bottom: 155px; */
+  bottom:0px; 
   left: -5vw;
   width: 60%;
   animation: none !important;
@@ -2449,6 +2450,7 @@ mix-blend-mode: exclusion;
         left: -5vw;
         width: 60%;
         /* bottom: 155px; */
+        bottom: 0px; 
         animation: none !important;
         -webkit-animation: none !important;
       }
@@ -2548,6 +2550,7 @@ mix-blend-mode: exclusion;
       bottom: 0px;
       left: -5vw;
       /* bottom: 155px; */
+      bottom: 0px; 
       animation: none !important;
       -webkit-animation: none !important;
     }
@@ -2684,6 +2687,7 @@ mix-blend-mode: exclusion;
         /* bottom: 155px; */
         left: -5vw;
         width: 60%;
+        bottom: 0px; 
         animation: none !important;
         -webkit-animation: none !important;
       }
