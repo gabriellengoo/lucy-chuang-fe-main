@@ -2325,6 +2325,123 @@ mix-blend-mode: exclusion;
 /* ------------------------ ------------------------ /* Large screens ----------- */
 
 
+
+
+
+
+@media screen and (min-width: 1920px), screen and (max-height: 1080px) {
+
+  .wrapper{
+    position: relative;
+    z-index: 100;
+    width: 100vw;
+    top:30vh;
+    /* height: fit-content; */
+    height: 640vh;
+    text-decoration-thickness: 1px;
+    -moz-text-decoration-thickness: 1px;
+    -webkit-text-decoration-thickness: 1px;
+    /* overflow: hidden; */
+    text-underline-offset: .5rem;
+  }
+  
+    /* .botflowercontsaf{
+      position: relative;
+        top: -465vh;
+        left: 15vw;
+    } */
+
+    .entropycont{
+      top: 105vh;
+    }
+
+
+    /* raw reality */
+    .wrapper > div:nth-child(1) {
+      position: absolute;
+      top: 10vh;
+      left: 40vw;
+      width: 60%;
+    }
+
+    .wrapper > div:nth-child(1) > p:nth-child(2) {
+      top: 18vh;
+      left: 22vw;
+      /* font-size: 42px; font-size: calc(50px + 0.390625vw); */
+    }
+
+
+    /* cute man made in britan*/
+    .wrapper > div:nth-child(2) > p:nth-child(2) {
+      text-decoration-thickness: 1px;
+    /* font-size: 60px; font-size: calc(50px + 0.390625vw); */
+    font-family: serif;
+    color: #ff85c7;
+    color: white;
+            font-style: italic;
+            font-style:normal;
+            position: absolute;
+            top: 45vh;
+            /* left: -6vw; */
+    }
+
+
+    /* blue */
+      .wrapper > div:nth-child(7) > p:nth-child(2) {
+        position: absolute;
+        text-decoration-thickness: 1px;
+      top: 4vh;
+      left: 3vw;
+      color: #510202;
+      font-family: serif;
+      font-size:48px;
+      font-size: calc(30px + 0.390625vw);    
+      font-style: normal;
+      z-index: 400;
+      }
+
+
+      .hscrollcont{ 
+        z-index: 1100 !important;
+          position: absolute;
+          left: 250vw;
+          top: 430vh;
+          padding-left: 5rem;
+          height: 30vh;
+          width: 100%;
+          font-family: serif;
+      }
+    
+   
+      /* big head */
+      .wrapper > div:nth-child(8) {
+        position: absolute;
+        top: 473vh;
+        left: -5vw;
+        width: 60%;
+        animation: none !important;
+        -webkit-animation: none !important;
+      }
+
+
+
+
+    /* fire--------------------------------------------------------- */
+
+
+
+
+
+     /* safari --------------------------------------------------------- */
+
+ 
+
+
+}
+
+
+
+
 @media screen and (min-width: 1024px) {
 
   .wrapper{
@@ -2450,122 +2567,6 @@ z-index: 400;
 
   
 }
-
-
-
-
-@media screen and (min-width: 1920px) {
-
-  .wrapper{
-    position: relative;
-    z-index: 100;
-    width: 100vw;
-    top:30vh;
-    /* height: fit-content; */
-    height: 640vh;
-    text-decoration-thickness: 1px;
-    -moz-text-decoration-thickness: 1px;
-    -webkit-text-decoration-thickness: 1px;
-    /* overflow: hidden; */
-    text-underline-offset: .5rem;
-  }
-  
-    /* .botflowercontsaf{
-      position: relative;
-        top: -465vh;
-        left: 15vw;
-    } */
-
-    .entropycont{
-      top: 105vh;
-    }
-
-
-    /* raw reality */
-    .wrapper > div:nth-child(1) {
-      position: absolute;
-      top: 10vh;
-      left: 40vw;
-      width: 60%;
-    }
-
-    .wrapper > div:nth-child(1) > p:nth-child(2) {
-      top: 18vh;
-      left: 22vw;
-      /* font-size: 42px; font-size: calc(50px + 0.390625vw); */
-    }
-
-
-    /* cute man made in britan*/
-    .wrapper > div:nth-child(2) > p:nth-child(2) {
-      text-decoration-thickness: 1px;
-    /* font-size: 60px; font-size: calc(50px + 0.390625vw); */
-    font-family: serif;
-    color: #ff85c7;
-    color: white;
-            font-style: italic;
-            font-style:normal;
-            position: absolute;
-            top: 45vh;
-            /* left: -6vw; */
-    }
-
-
-    /* blue */
-      .wrapper > div:nth-child(7) > p:nth-child(2) {
-        position: absolute;
-        text-decoration-thickness: 1px;
-      top: 4vh;
-      left: 3vw;
-      color: #510202;
-      font-family: serif;
-      font-size:48px;
-      font-size: calc(30px + 0.390625vw);    
-      font-style: normal;
-      z-index: 400;
-      }
-
-
-      .hscrollcont{ 
-        z-index: 1100 !important;
-          position: absolute;
-          left: 250vw;
-          top: 430vh;
-          padding-left: 5rem;
-          height: 30vh;
-          width: 100%;
-          font-family: serif;
-      }
-    
-   
-      /* big head */
-      .wrapper > div:nth-child(8) {
-        position: absolute;
-        top: 473vh;
-        left: -5vw;
-        width: 60%;
-        animation: none !important;
-        -webkit-animation: none !important;
-      }
-
-
-
-
-    /* fire--------------------------------------------------------- */
-
-
-
-
-
-     /* safari --------------------------------------------------------- */
-
- 
-
-
-}
-
-
-
 
 
  /* ------------------------------------------ TEST   27.0" screens - mums PC is 23"  //For 4K Displays (Ultra HD) */
