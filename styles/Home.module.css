@@ -2329,7 +2329,7 @@ mix-blend-mode: exclusion;
 
 
 
-@media only screen and (min-width: 1900px) {
+@media only screen and (min-width:1900px) {
 
   .wrapper{
     position: relative;
@@ -2442,7 +2442,7 @@ mix-blend-mode: exclusion;
 
 
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width:1024px) and (max-width:1899px)  {
 
   .wrapper{
     position: relative;
