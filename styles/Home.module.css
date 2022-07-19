@@ -2329,7 +2329,7 @@ mix-blend-mode: exclusion;
 
 
 
-@media screen and (min-width: 1920px), screen and (max-height: 1080px) {
+@media only screen and (min-width: 1900px) {
 
   .wrapper{
     position: relative;
@@ -2442,7 +2442,7 @@ mix-blend-mode: exclusion;
 
 
 
-@media screen and (min-width: 1024px) {
+@media only screen and (min-width: 1024px) {
 
   .wrapper{
     position: relative;
@@ -2570,7 +2570,7 @@ z-index: 400;
 
 
  /* ------------------------------------------ TEST   27.0" screens - mums PC is 23"  //For 4K Displays (Ultra HD) */
- @media screen and (min-width: 2560px) {
+ @media only screen and (min-width: 2560px) {
   
 
 
