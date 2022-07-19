@@ -2361,7 +2361,7 @@ mix-blend-mode: exclusion;
 
 
 /* ------------------------ ------------------------ /* Large screens ----------- */
-@media only screen and (min-width: 1920px) and (max-height: 1080px){
+@media screen and (min-width: 1920px), screen and (max-height: 1080px){
   
     /* .botflowercontsaf{
       position: relative;
@@ -2462,7 +2462,7 @@ mix-blend-mode: exclusion;
 
 
  /* ------------------------------------------ TEST   27.0" screens - mums PC is 23"  //For 4K Displays (Ultra HD) */
- @media screen and (min-width: 2560px) and (max-height: 1440px) {
+ @media screen and (min-width: 2560px), screen and (max-height: 1440px) {
   
 
 
@@ -2571,7 +2571,7 @@ mix-blend-mode: exclusion;
 
 
 
-  @media only screen and (min-width: 2560px) and (max-height: 1600px) {
+  @media screen and (min-width: 2560px) , screen and (max-height: 1600px) {
   
 
     .entropycont{
@@ -2695,7 +2695,7 @@ mix-blend-mode: exclusion;
 
 
 
-    @media only screen and (min-width: 1600px) and (max-height: 1200px) {
+    @media screen and (min-width: 1600px), screen and (max-height: 1200px) {
   
       .test3{
         height: 670vh;
