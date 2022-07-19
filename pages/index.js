@@ -410,15 +410,6 @@ export default function Home({ posts }) {
                       />
 
 
-
-
-
-                    
-
-
-
-
-
                       <div className={styles.videocontchrome}>
                    
                         <iframe
@@ -447,7 +438,41 @@ export default function Home({ posts }) {
                         className={styles.flowergreen}
                         src="https://i.ibb.co/dDcN0FP/9-1.png"
                       />
+
+
+              <footer className={styles.footer}>
+                <div className=" pb-20 inline-grid grid-cols-2">
+                  <p className="px-1 ">Archive</p>
+                  <div className="px-1">
+                    <ul className="list-none font-light text-left">
+                      <p className=" text-left ">Contact me :)</p>
+                      <li>Xinyu.c.contact@gmail.com</li>
+                      <a
+                        href="https://www.instagram.com/chuangxyyy/"
+                        data-location="internal"
+                      >
+                        Instagram
+                      </a>
+                    </ul>
+                  </div>
+                </div>
+
+                <div>
+                  <p>Xinyu Chuang 2022</p>
+                  <a
+                    href="https://www.instagram.com/is_this_gabrielle/"
+                    data-location="internal"
+                  >
+                    © Created by the Internet Arcitect
+                  </a>
+                </div>
+              </footer>
+
                     </div>
+
+
+              
+
                   </CustomView>
 
                   <CustomView condition={browserName === "Firefox"}>
@@ -705,15 +730,6 @@ export default function Home({ posts }) {
                       />
 
 
-
-
-
-                    
-
-
-
-
-
                       <div className={styles.videocontchrome}>
                    
                         <iframe
@@ -742,43 +758,20 @@ export default function Home({ posts }) {
                         className={styles.flowergreen}
                         src="https://i.ibb.co/dDcN0FP/9-1.png"
                       />
+
                     </div>
+
+                    
                   </CustomView>
                 {/* </div> */}
+
+
+                 
+
               </section>
 
 
-
-
-        
-
-              <footer className={styles.footer}>
-                <div className="pb-40 inline-grid grid-cols-2">
-                  <p className="px-1 ">Archive</p>
-                  <div className="px-1">
-                    <ul className="list-none font-light text-left">
-                      <p className=" text-left ">Contact me :)</p>
-                      <li>Xinyu.c.contact@gmail.com</li>
-                      <a
-                        href="https://www.instagram.com/chuangxyyy/"
-                        data-location="internal"
-                      >
-                        Instagram
-                      </a>
-                    </ul>
-                  </div>
-                </div>
-
-                <div>
-                  <p>Xinyu Chuang 2022</p>
-                  <a
-                    href="https://www.instagram.com/is_this_gabrielle/"
-                    data-location="internal"
-                  >
-                    © Created by the Internet Arcitect
-                  </a>
-                </div>
-              </footer>
+            
             </main>
           </BrowserView>
 
