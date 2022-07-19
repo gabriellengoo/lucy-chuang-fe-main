@@ -986,8 +986,8 @@ position: absolute;
 .videocont{
   z-index:-1;
   border: none;
-  position: relative;
-  top: 490vh;
+  position: absolute;
+  top: 320vh;
   width: 100vw;
   height: 100vh;
   -webkit-transform: translateY(-38.2779%);
@@ -1052,7 +1052,6 @@ position: absolute;
     height:180%; 
     position:absolute; 
     left:-10vh; 
-    /* top:-40%;  */
     z-index:-1;
     pointer-events: none;
     }
