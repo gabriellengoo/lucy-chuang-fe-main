@@ -218,16 +218,14 @@ export default function Home({ posts }) {
                 <p className="px-1 ">Archive</p>
                 <div className="px-1">
                   {/* <ul className="list-none font-light text-center" > */}
-                  <p className=" text-center ">Contact me :)</p>
-                  <a href="mailto:xinyu.c.contact@gmail.com" data-location="internal">
-              mailto:xinyu.c.contact@gmail.com
-            </a> 
-            <a
-                    href="https://www.instagram.com/chuangxyyy/"
-                    data-location="internal"
-                  >
-                    Instagram
-                  </a>
+                  <p className="  text-left ">Contact me :)</p>
+                      <a className=" pt-3  " href="mailto:xinyu.c.contact@gmail.com" data-location="internal">
+              xinyu.c.contact@gmail.com
+            </a>         
+            <div className=" p-3 "></div>    <div></div>            
+              <a className=" pt-3 " href="https://www.instagram.com/chuangxyyy/" data-location="internal">
+                        Instagram
+                      </a>
                   {/* </ul> */}
                 </div>
               </div>
@@ -456,14 +454,12 @@ export default function Home({ posts }) {
                   <p className="px-1 ">Archive</p>
                   <div className="px-1">
                     <ul className="list-none font-light text-left">
-                      <p className=" text-left ">Contact me :)</p>
-                      <a href="mailto:xinyu.c.contact@gmail.com" data-location="internal">
-              mailto:xinyu.c.contact@gmail.com
-            </a> 
-                      <a
-                        href="https://www.instagram.com/chuangxyyy/"
-                        data-location="internal"
-                      >
+                    <p className="  text-left ">Contact me :)</p>
+                      <a className=" pt-3  " href="mailto:xinyu.c.contact@gmail.com" data-location="internal">
+              xinyu.c.contact@gmail.com
+            </a>         
+            <div className=" p-3 "></div>    <div></div>            
+              <a className=" pt-3 " href="https://www.instagram.com/chuangxyyy/" data-location="internal">
                         Instagram
                       </a>
                     </ul>
@@ -660,12 +656,12 @@ export default function Home({ posts }) {
                   <p className="px-1 ">Archive</p>
                   <div className="px-1">
                     <ul className="list-none font-light text-left">
-                      <p className=" text-left ">Contact me :)</p>
-                      <li>mailto:Xinyu.c.contact@gmail.com</li>
-                      <a
-                        href="https://www.instagram.com/chuangxyyy/"
-                        data-location="internal"
-                      >
+                    <p className="  text-left ">Contact me :)</p>
+                      <a className=" pt-3  " href="mailto:xinyu.c.contact@gmail.com" data-location="internal">
+              xinyu.c.contact@gmail.com
+            </a>         
+            <div className=" p-3 "></div>    <div></div>            
+              <a className=" pt-3 " href="https://www.instagram.com/chuangxyyy/" data-location="internal">
                         Instagram
                       </a>
                     </ul>
@@ -768,12 +764,12 @@ export default function Home({ posts }) {
                   <p className="px-1 ">Archive</p>
                   <div className="px-1">
                     <ul className="list-none font-light text-left">
-                      <p className=" text-left ">Contact me :)</p>
-                      <li>mailto:Xinyu.c.contact@gmail.com</li>
-                      <a
-                        href="https://www.instagram.com/chuangxyyy/"
-                        data-location="internal"
-                      >
+                    <p className="  text-left ">Contact me :)</p>
+                      <a className=" pt-3  " href="mailto:xinyu.c.contact@gmail.com" data-location="internal">
+              xinyu.c.contact@gmail.com
+            </a>         
+            <div className=" p-3 "></div>    <div></div>            
+              <a className=" pt-3 " href="https://www.instagram.com/chuangxyyy/" data-location="internal">
                         Instagram
                       </a>
                     </ul>
@@ -865,12 +861,12 @@ export default function Home({ posts }) {
                   <p className="px-1 ">Archive</p>
                   <div className="px-1">
                     <ul className="list-none font-light text-left">
-                      <p className=" text-left ">Contact me :)</p>
-                      <li>mailto:Xinyu.c.contact@gmail.com</li>
-                      <a
-                        href="https://www.instagram.com/chuangxyyy/"
-                        data-location="internal"
-                      >
+                    <p className="  text-left ">Contact me :)</p>
+                      <a className=" pt-3  " href="mailto:xinyu.c.contact@gmail.com" data-location="internal">
+              xinyu.c.contact@gmail.com
+            </a>         
+            <div className=" p-3 "></div>    <div></div>            
+              <a className=" pt-3 " href="https://www.instagram.com/chuangxyyy/" data-location="internal">
                         Instagram
                       </a>
                     </ul>
