@@ -1,5 +1,304 @@
 
 
+
+
+
+
+ /* ------------------------------------------ TEST   27.0" screens - mums PC is 23"  //For 4K Displays (Ultra HD) */
+ @media screen and (min-width: 2560px) {
+  
+
+
+  .entropycont{
+    top: 107vh;
+  }
+
+
+
+  /* raw reality */
+  .wrapper > div:nth-child(1) {
+    position: absolute;
+    top: 10vh;
+    left: 40vw;
+    width: 60%;
+  }
+
+  .wrapper > div:nth-child(1) > p:nth-child(2) {
+    top: 22vh;
+    left: 25vw;
+    /* font-size: 42px; font-size: calc(50px + 0.390625vw); */
+  }
+
+
+  /* cute man made in britan*/
+  .wrapper > div:nth-child(2) > p:nth-child(2) {
+    text-decoration-thickness: 1px;
+  font-family: serif;
+  color: #ff85c7;
+  color: white;
+          font-style: italic;
+          font-style:normal;
+          position: absolute;
+          top: 45vh;
+          font-size: calc(50px + 0.390625vw);  
+          left: -3vw;
+  }
+
+
+  /* blue */
+    .wrapper > div:nth-child(7) > p:nth-child(2) {
+      position: absolute;
+      text-decoration-thickness: 1px;
+    top: 4vh;
+    left: 6vw;
+    color: #510202;
+    font-family: serif;
+    font-size:48px;
+    font-size: calc(30px + 0.390625vw);    
+    font-style: normal;
+    z-index: 400;
+    }
+
+
+    .hscrollcont{ 
+      z-index: 1100 !important;
+        position: absolute;
+        left: 250vw;
+        top: 430vh;
+        padding-left: 5rem;
+        height: 30vh;
+        width: 100%;
+        font-family: serif;
+    }
+  
+ 
+    /* big head */
+    .wrapper > div:nth-child(8) {
+      position: absolute;
+      /* top: 475vh; */
+      bottom: 0px;
+      left: -5vw;
+      /* bottom: 155px; */
+      bottom: 0px; 
+      animation: none !important;
+      -webkit-animation: none !important;
+    }
+
+      .botflowercont{
+    position: absolute;
+    /* top:406vh; */
+    width: 90%;
+    /* bottom: 155px; */
+    bottom: 0px;
+  left: 20vw;
+  }
+
+
+    .wrapper > div:nth-child(3) > p:nth-child(2) {
+    top: 48vh;
+    left: 44vw;
+    font-size: calc(40px + 0.390625vw);    
+    }
+
+
+    .test3{
+      --bg-gradient: linear-gradient(169.78deg, rgba(255, 255, 255, 0.23) 4.65%, rgba(255, 255, 255, 0) 91.48%), radial-gradient(62.3% 67.27% at 20.42% 27.48%, #5E4B1E 0%, #2B2A28 100%), linear-gradient(112.91deg, #676561 3.51%, #242321 111.71%);
+      --body-text: #f0efeb;
+      background-image: url("../public/images/backgroundbottompart3.png");
+      height: 715vh;
+      position: absolute;
+      top: 75vh;
+      pointer-events: none;
+      width: 100vw;
+      z-index: 15;
+      background-size: cover;
+    }
+
+  }
+
+
+
+
+  @media screen and (min-width: 2560px) {
+  
+
+    .entropycont{
+      top: 105vh;
+    }
+  
+  
+    .botflowercont{
+      position: absolute;
+      /* top:415vh; */
+      width: 90%;
+      /* bottom: 155px; */
+      bottom: 0px;
+      left: 20vw;
+    }
+
+
+
+    .titleofprojecthottest{
+      font-weight: 300;
+      font-style: italic;
+      text-decoration: underline;
+      font-size: 67px; font-size: calc(80px + 0.390625vw);
+      width: 100%;
+      color: #ffffff;
+      position: relative;
+      top: -30vh;
+      left: 55vw;
+      text-decoration-thickness: 1px;
+    }
+  
+  
+    /* raw reality */
+    .wrapper > div:nth-child(1) {
+      position: absolute;
+      top: 9vh;
+      left: 40vw;
+      width: 60%;
+    }
+  
+    .wrapper > div:nth-child(1) > p:nth-child(2) {
+      top: 22vh;
+      left: 25vw;
+      /* font-size: 42px; font-size: calc(50px + 0.390625vw); */
+    }
+  
+  
+    /* cute man made in britan*/
+    .wrapper > div:nth-child(2) > p:nth-child(2) {
+      text-decoration-thickness: 1px;
+    font-family: serif;
+    color: #ff85c7;
+    color: white;
+            font-style: italic;
+            font-style:normal;
+            position: absolute;
+            top: 45vh;
+            font-size: calc(50px + 0.390625vw);  
+            left: -3vw;
+    }
+  
+  
+    /* blue */
+      .wrapper > div:nth-child(7) > p:nth-child(2) {
+        position: absolute;
+        text-decoration-thickness: 1px;
+      top: 3vh;
+      left: 6vw;
+      color: #510202;
+      font-family: serif;
+      font-size:48px;
+      font-size: calc(30px + 0.390625vw);    
+      font-style: normal;
+      z-index: 400;
+      }
+  
+  
+      .hscrollcont{ 
+        z-index: 1100 !important;
+          position: absolute;
+          left: 250vw;
+          top: 430vh;
+          padding-left: 5rem;
+          height: 30vh;
+          width: 100%;
+          font-family: serif;
+      }
+    
+   
+      /* big head */
+      .wrapper > div:nth-child(8) {
+        position: absolute;
+        /* top: 489vh; */
+        /* bottom: 155px; */
+        left: -5vw;
+        width: 60%;
+        bottom: 0px; 
+        animation: none !important;
+        -webkit-animation: none !important;
+      }
+  
+  
+      .wrapper > div:nth-child(3) > p:nth-child(2) {
+      top: 48vh;
+      left: 44vw;
+      font-size: calc(40px + 0.390625vw);    
+      }
+  
+  
+      .test3{
+        --bg-gradient: linear-gradient(169.78deg, rgba(255, 255, 255, 0.23) 4.65%, rgba(255, 255, 255, 0) 91.48%), radial-gradient(62.3% 67.27% at 20.42% 27.48%, #5E4B1E 0%, #2B2A28 100%), linear-gradient(112.91deg, #676561 3.51%, #242321 111.71%);
+        --body-text: #f0efeb;
+        background-image: url("../public/images/backgroundbottompart3.png");
+        height: 715vh;
+        position: absolute;
+        top: 75vh;
+        pointer-events: none;
+        width: 100vw;
+        z-index: 15;
+        background-size: cover;
+      }
+  
+    }
+
+
+
+
+
+    @media screen and (min-width: 1600px) {
+  
+      .test3{
+        height: 670vh;
+      }
+
+      .entropycont{
+        top: 102vh;
+      }
+
+      .titleofprojecthottest{
+        top: -30vh;
+        left: 55vw;
+      }
+
+         /* blue */
+         .wrapper > div:nth-child(7) > p:nth-child(2) {
+         
+        top: -4vh;
+       
+        }
+
+
+        .wrapper{
+          position: relative;
+          z-index: 100;
+          width: 100vw;
+          top:30vh;
+          height: 610vh;
+          text-decoration-thickness: 1px;
+          -moz-text-decoration-thickness: 1px;
+          -webkit-text-decoration-thickness: 1px;
+          text-underline-offset: .5rem;
+        }
+
+
+          
+
+      .botflowercont{
+        position: absolute;
+        /* top:390vh; */
+        width: 90%;
+        /* bottom: 155px; */
+        bottom: 0px;
+        left: 20vw;
+      }
+    
+    
+      }
+
+      
 /* meadia start ------------------------------------- */
 
 
