@@ -137,25 +137,7 @@ export default function Home({ posts }) {
         <>
           <MobileView>
             <div>
-              <div className="pb-96">
-                {/* <iframe className={styles.video} src="https://drive.google.com/file/d/14w2FfWc-LfdUSPoM79y06_sdVXXG_QXa/preview?start=1"></iframe> */}
-                {/* style="transform: translateY(-38.2813%);" style="position:absolute;top:0;left:0;width:100%;height:100%;" */}
-                {/* <div class="video-wrapper"><div class="plyr__video-embed__container" > */}
-                <iframe
-                  src="https://player.vimeo.com/video/721799699?h=b659979974?background=1&amp;autoplay=1&amp;muted=1&amp;loop=1&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-                  frameBorder="0"
-                  className={styles.video}
-                  allow="autoplay; fullscreen; picture-in-picture; loop=1; muted=1"
-                  id="video"
-                  muted
-                  webkitallowfullscreen
-                  mozallowfullscreen
-                  allowFullScreen
-                  title="fixed metaverse"
-                ></iframe>
-                {/* <div class="plyr__captions"></div> */}
-                {/* </div> */}
-              </div>
+           
 
               <div className={styles.main}>
                 <div className={styles.logocontmobile}>
@@ -165,7 +147,7 @@ export default function Home({ posts }) {
                   />
                 </div>
 
-                <div className={styles.figuren}>
+                <div className={styles.figurencontmobile}>
                   <img
                     className={styles.figurenmobile}
                     src="https://i.ibb.co/Zm35Tgq/foreground-fixed-1.png"
@@ -176,12 +158,12 @@ export default function Home({ posts }) {
 
                 {/* <h3>Recent Posts:</h3> */}
 
-                <div className={styles.feed}>
+                <div className={styles.feedmobile}>
                   {mappedPosts.length ? (
                     mappedPosts.map((p, id) => (
                       <div
                         onClick={() =>
-                          router.push(`/firsttwo/${p.slug.current}`)
+                          router.push(`/projects/${p.slug.current}`)
                         }
                         key={id}
                         className={styles.post}
@@ -201,17 +183,46 @@ export default function Home({ posts }) {
                     <>No Posts Yet</>
                   )}
                 </div>
+
+
+                <div className=" relative h-screen">
+                {/* <iframe className={styles.video} src="https://drive.google.com/file/d/14w2FfWc-LfdUSPoM79y06_sdVXXG_QXa/preview?start=1"></iframe> */}
+                {/* style="transform: translateY(-38.2813%);" style="position:absolute;top:0;left:0;width:100%;height:100%;" */}
+                {/* <div class="video-wrapper"><div class="plyr__video-embed__container" > */}
+                <iframe
+                  src="https://player.vimeo.com/video/721799699?h=b659979974?background=1&amp;autoplay=1&amp;muted=1&amp;loop=1&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                  frameBorder="0"
+                  className={styles.video}
+                  allow="autoplay; fullscreen; picture-in-picture; loop=1; muted=1"
+                  id="video"
+                  muted
+                  webkitallowfullscreen
+                  mozallowfullscreen
+                  allowFullScreen
+                  title="fixed metaverse"
+                ></iframe>
+                {/* <div class="plyr__captions"></div> */}
+                {/* </div> */}
               </div>
+
+              </div>
+
             </div>
 
-            <footer className={styles.footer}>
-              <div className="pb-40 inline-grid grid-cols-1">
+
+           
+
+
+            <footer className={styles.footermobile}>
+              <div className="pb-10 inline-grid grid-cols-1 font-thin">
                 <p className="px-1 ">Archive</p>
                 <div className="px-1">
                   {/* <ul className="list-none font-light text-center" > */}
                   <p className=" text-center ">Contact me :)</p>
-                  <li className="list-none">Xinyu.c.contact@gmail.com</li>
-                  <a
+                  <a href="mailto:xinyu.c.contact@gmail.com" data-location="internal">
+              mailto:xinyu.c.contact@gmail.com
+            </a> 
+            <a
                     href="https://www.instagram.com/chuangxyyy/"
                     data-location="internal"
                   >
@@ -221,7 +232,7 @@ export default function Home({ posts }) {
                 </div>
               </div>
 
-              <div>
+              <div className="font-thin">
                 <p>Xinyu Chuang 2022</p>
                 <a
                   href="https://www.instagram.com/is_this_gabrielle/"
@@ -446,7 +457,9 @@ export default function Home({ posts }) {
                   <div className="px-1">
                     <ul className="list-none font-light text-left">
                       <p className=" text-left ">Contact me :)</p>
-                      <li>Xinyu.c.contact@gmail.com</li>
+                      <a href="mailto:xinyu.c.contact@gmail.com" data-location="internal">
+              mailto:xinyu.c.contact@gmail.com
+            </a> 
                       <a
                         href="https://www.instagram.com/chuangxyyy/"
                         data-location="internal"
@@ -482,7 +495,7 @@ export default function Home({ posts }) {
                         mappedPosts.map((p, id) => (
                           <div
                             onClick={() =>
-                              router.push(`/firsttwo/${p.slug.current}`)
+                              router.push(`/projects/${p.slug.current}`)
                             }
                             key={id}
                           >
@@ -543,6 +556,35 @@ export default function Home({ posts }) {
                         className={styles.flowergreen}
                         src="https://i.ibb.co/dDcN0FP/9-1.png"
                       />
+
+
+<footer className={styles.footer}>
+                <div className=" pb-20 inline-grid grid-cols-2">
+                  <p className="px-1 ">Archive</p>
+                  <div className="px-1">
+                    <ul className="list-none font-light text-left">
+                      <p className="  text-left ">Contact me :)</p>
+                      <a className=" pt-3  " href="mailto:xinyu.c.contact@gmail.com" data-location="internal">
+              xinyu.c.contact@gmail.com
+            </a>         
+            <div className=" p-3 "></div>    <div></div>            
+              <a className=" pt-3 " href="https://www.instagram.com/chuangxyyy/" data-location="internal">
+                        Instagram
+                      </a>
+                    </ul>
+                  </div>
+                </div>
+
+                <div>
+                  <p>Xinyu Chuang 2022</p>
+                  <a
+                    href="https://www.instagram.com/is_this_gabrielle/"
+                    data-location="internal"
+                  >
+                    © Created by the Internet Arcitect
+                  </a>
+                </div>
+              </footer>
                     </div>
                   </CustomView>
 
@@ -553,7 +595,7 @@ export default function Home({ posts }) {
                         mappedPosts.map((p, id) => (
                           <div
                             onClick={() =>
-                              router.push(`/firsttwo/${p.slug.current}`)
+                              router.push(`/projects/${p.slug.current}`)
                             }
                             key={id}
                           >
@@ -611,6 +653,35 @@ export default function Home({ posts }) {
                         className={styles.flowergreen}
                         src="https://i.ibb.co/dDcN0FP/9-1.png"
                       />
+
+
+<footer className={styles.footer}>
+                <div className=" pb-20 inline-grid grid-cols-2">
+                  <p className="px-1 ">Archive</p>
+                  <div className="px-1">
+                    <ul className="list-none font-light text-left">
+                      <p className=" text-left ">Contact me :)</p>
+                      <li>mailto:Xinyu.c.contact@gmail.com</li>
+                      <a
+                        href="https://www.instagram.com/chuangxyyy/"
+                        data-location="internal"
+                      >
+                        Instagram
+                      </a>
+                    </ul>
+                  </div>
+                </div>
+
+                <div>
+                  <p>Xinyu Chuang 2022</p>
+                  <a
+                    href="https://www.instagram.com/is_this_gabrielle/"
+                    data-location="internal"
+                  >
+                    © Created by the Internet Arcitect
+                  </a>
+                </div>
+              </footer>
                     </div>
                   </CustomView>
 
@@ -689,6 +760,36 @@ export default function Home({ posts }) {
                         className={styles.flowergreen}
                         src="https://i.ibb.co/dDcN0FP/9-1.png"
                       />
+
+
+
+<footer className={styles.footer}>
+                <div className=" pb-20 inline-grid grid-cols-2">
+                  <p className="px-1 ">Archive</p>
+                  <div className="px-1">
+                    <ul className="list-none font-light text-left">
+                      <p className=" text-left ">Contact me :)</p>
+                      <li>mailto:Xinyu.c.contact@gmail.com</li>
+                      <a
+                        href="https://www.instagram.com/chuangxyyy/"
+                        data-location="internal"
+                      >
+                        Instagram
+                      </a>
+                    </ul>
+                  </div>
+                </div>
+
+                <div>
+                  <p>Xinyu Chuang 2022</p>
+                  <a
+                    href="https://www.instagram.com/is_this_gabrielle/"
+                    data-location="internal"
+                  >
+                    © Created by the Internet Arcitect
+                  </a>
+                </div>
+              </footer>
                     </div>
                   </CustomView>
 
@@ -758,6 +859,34 @@ export default function Home({ posts }) {
                         className={styles.flowergreen}
                         src="https://i.ibb.co/dDcN0FP/9-1.png"
                       />
+
+<footer className={styles.footer}>
+                <div className=" pb-20 inline-grid grid-cols-2">
+                  <p className="px-1 ">Archive</p>
+                  <div className="px-1">
+                    <ul className="list-none font-light text-left">
+                      <p className=" text-left ">Contact me :)</p>
+                      <li>mailto:Xinyu.c.contact@gmail.com</li>
+                      <a
+                        href="https://www.instagram.com/chuangxyyy/"
+                        data-location="internal"
+                      >
+                        Instagram
+                      </a>
+                    </ul>
+                  </div>
+                </div>
+
+                <div>
+                  <p>Xinyu Chuang 2022</p>
+                  <a
+                    href="https://www.instagram.com/is_this_gabrielle/"
+                    data-location="internal"
+                  >
+                    © Created by the Internet Arcitect
+                  </a>
+                </div>
+              </footer>
 
                     </div>
 

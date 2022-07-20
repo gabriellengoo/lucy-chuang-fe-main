@@ -137,6 +137,7 @@ export const Post = () => {
             <a href="../" data-location="internal">
               2022 Xinyu CHUANG
             </a>
+
           </div>
           <div>__</div>
                 {/* <div className={styles.headertime}> 06:20:22</div> */}

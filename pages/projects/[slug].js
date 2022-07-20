@@ -19,7 +19,7 @@ import Router from 'next/router'
 import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
 import { useRouter } from "next/router";
 
-export const Post = ({ titleofproject, mainImageprojects, images }) => {
+export const Post = ({ titleofproject, mainImagefirsttwo, images }) => {
   const router = useRouter();
   const [isLoaded, setisLoaded] = useState(false);
   const [mappedPosts, setMappedPosts] = useState([]);
@@ -52,7 +52,7 @@ export const Post = ({ titleofproject, mainImageprojects, images }) => {
       dataset: "production",
     });
 
-    setImageUrl(imgBuilder.image(mainImageprojects));
+    setImageUrl(imgBuilder.image(mainImagefirsttwo));
 
     console.log(images);
 
@@ -70,7 +70,7 @@ export const Post = ({ titleofproject, mainImageprojects, images }) => {
         item.classList.add("active-item", "active-item__scale");
       })
     );
-  }, [mainImageprojects]);
+  }, [mainImagefirsttwo]);
 
   return (
 
@@ -342,7 +342,7 @@ export const getServerSideProps = async (pageContext) => {
       props: {
         // bodyofproject: post.bodyofproject,
         titleofproject: post.titleofproject,
-        mainImageprojects: post.mainImageprojects,
+        mainImagefirsttwo: post.mainImagefirsttwo,
         // categories: post.categories,
         images: post.images,
       },
