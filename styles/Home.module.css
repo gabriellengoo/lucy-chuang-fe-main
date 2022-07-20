@@ -2382,7 +2382,7 @@ mix-blend-mode: exclusion;
   position: absolute;
   text-decoration-thickness: 1px;
 top: 2vh;
-left: 0vw;
+left: 2vw;
 color: #510202;
 font-family: serif;
 font-size:48px;
@@ -2404,9 +2404,44 @@ z-index: 400;
 }
 
 
+.entropycont{
+  font-size:5vh;
+  font-size: calc(40px + 0.390625vw); 
+  top: 104vh;
+  left: -5%;
+  z-index: 200;
+  color: rgb(255, 102, 186);
+  color: #ff85c7;
+  font-weight: 500;
+  font-style: italic;
+  overflow-x: hidden;
+  width: 120vw;
+  font-family: serif;
+  overflow-x:hidden;
+  position: absolute;
+}
+
+/* raw reality */
+.wrapper > div:nth-child(1) > p:nth-child(2) {
+  top: 21vh;
+  left: 23vw;
+}
 
 
+.wrapper > div:nth-child(3) > p:nth-child(2) {
+  top: 46vh;
+  left: 47vw;
+  font-size: 60px; font-size: calc(50px + 0.390625vw);
+  /* font-family: "FPTypewriter"; */
+}
 
+
+/*  shooting not so  */
+
+.wrapper > div:nth-child(5) > p:nth-child(2) {
+  top: 95vh;
+  left: 32vw;
+}
 
 }
 
