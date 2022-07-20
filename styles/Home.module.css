@@ -313,7 +313,7 @@ top: 90vh;
           transform: rotate(45deg);
           font-style: italic;
           font-style:normal;
-          text-decoration: underline;
+          /* text-decoration: underline; */
 }
 
 
@@ -1756,7 +1756,7 @@ top: 90vh;
           transform: rotate(45deg);
           font-style: italic;
           font-style:normal;
-          text-decoration: underline;
+          /* text-decoration: underline; */
 }
 
 
@@ -2374,7 +2374,7 @@ mix-blend-mode: exclusion;
 
 
 
-@media screen and (min-width : 1824px) {
+@media screen and (min-width: 1440px) {
   
   
   /* blue */
@@ -2443,6 +2443,35 @@ z-index: 400;
   left: 32vw;
 }
 
+
+.man{
+  z-index: 100;
+  width: 50%;
+  overflow: hidden;
+  position: absolute;
+  /* height: 20%; */
+  left: 0vw;
+  -webkit-filter: drop-shadow(0rem 0rem .5rem rgb(255, 255, 255));
+          filter: drop-shadow(0rem 0rem .5rem rgb(255, 255, 255));
+  top: 250vh;
+  -webkit-animation: glitter 5s infinite;
+          animation: glitter 5s infinite;
+}
+
+
+.manchrome{
+  z-index: 100;
+  width: 50%;
+  overflow: hidden;
+  position: absolute;
+  /* height: 20%; */
+  left: 0vw;
+  -webkit-filter: drop-shadow(0rem 0rem .5rem rgb(255, 255, 255));
+          filter: drop-shadow(0rem 0rem .5rem rgb(255, 255, 255));
+  top: 280vh;
+  -webkit-animation: glitter 5s infinite;
+          animation: glitter 5s infinite;
+}
 }
 
 
