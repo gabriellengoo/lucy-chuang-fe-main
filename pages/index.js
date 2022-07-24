@@ -76,7 +76,7 @@ export default function Home({ posts }) {
             content="Xinyu Chuang author: Gabrielle the  Internet Arcitect ©2022 category:application-javascript"
           />
           {/* <meta property="og:url" content="http://niksgames.com/blockland" /> */}
-          <meta property="og:type" content="product" />
+          <meta property="og:type" content="portfolio" />
           <meta property="og:title" content="Xinyu Chuang" />
           <meta
             property="og:description"
@@ -88,14 +88,14 @@ export default function Home({ posts }) {
           />
           <meta
             property="og:image:type"
-            content="https://i.ibb.co/9T4ft5j/logo.png"
+            content="/favicon.ico"
           />
           <meta property="og:image:width" content={1265} />
           <meta property="og:image:height" content={817} />
           <meta property="og:image:alt" content="Xinyu Chuang" />
         </>
 
-        <link rel="apple-touch-icon" href="https://i.ibb.co/9T4ft5j/logo.png" />
+        <link rel="apple-touch-icon" href="/favicon.ico" />
         <link rel="icon" href="https://i.ibb.co/9T4ft5j/logo.png" />
         <link rel="icon" href="/favicon.ico" />
 
