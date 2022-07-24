@@ -2532,7 +2532,7 @@ z-index: 400;
 .entropycont{
   font-size:5vh;
   font-size: calc(40px + 0.390625vw); 
-  top: 104vh;
+  top: 105vh;
   left: -5%;
   z-index: 200;
   color: rgb(255, 102, 186);
