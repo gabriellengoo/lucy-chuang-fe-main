@@ -2614,7 +2614,7 @@ mix-blend-mode: exclusion;
   }
 
 
-  @media all and (device-width: 907px) and (device-height: 642px) and (orientation:landscape) {
+  @media all and (device-width: 2360px ) and (device-height: 1640px) and (orientation:landscape) {
     .logomoblie{
       z-index: 10000 !important;
         width: 20%;
