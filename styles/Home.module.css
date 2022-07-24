@@ -2614,7 +2614,11 @@ mix-blend-mode: exclusion;
   }
 
 
-  @media all and (device-width: 2360px ) and (device-height: 1640px) and (orientation:landscape) {
+  @media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 2)  {
     .logomoblie{
       z-index: 10000 !important;
         width: 20%;
