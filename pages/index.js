@@ -135,11 +135,14 @@ export default function Home({ posts }) {
       </Head>
       {isLoaded ? (
         <>
+
+
+
           <MobileView>
             <div>
            
 
-              <div className={styles.main}>
+              <div className={styles.mainmobile}>
                 <div className={styles.logocontmobile}>
                   <img
                     className={styles.logomoblie}
@@ -159,6 +162,7 @@ export default function Home({ posts }) {
                 {/* <h3>Recent Posts:</h3> */}
 
                 <div className={styles.feedmobile}>
+                {/* <div className={styles.wrapper}> */}
                   {mappedPosts.length ? (
                     mappedPosts.map((p, id) => (
                       <div
@@ -177,34 +181,37 @@ export default function Home({ posts }) {
                             {p.titleofproject}
                           </p>
                         </div>
+
                       </div>
+                      // </div>
                     ))
                   ) : (
                     <>No Posts Yet</>
                   )}
-                </div>
+                {/* </div> */}
 
 
-                <div className=" relative h-screen">
+                {/* <div className={styles.videomobile}> */}
                 {/* <iframe className={styles.video} src="https://drive.google.com/file/d/14w2FfWc-LfdUSPoM79y06_sdVXXG_QXa/preview?start=1"></iframe> */}
                 {/* style="transform: translateY(-38.2813%);" style="position:absolute;top:0;left:0;width:100%;height:100%;" */}
                 {/* <div class="video-wrapper"><div class="plyr__video-embed__container" > */}
                 <iframe
-                  src="https://player.vimeo.com/video/721799699?h=b659979974?background=1&amp;autoplay=1&amp;muted=1&amp;loop=1&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
-                  frameBorder="0"
-                  className={styles.video}
-                  allow="autoplay; fullscreen; picture-in-picture; loop=1; muted=1"
-                  id="video"
-                  muted
-                  webkitallowfullscreen
-                  mozallowfullscreen
-                  allowFullScreen
-                  title="fixed metaverse"
-                ></iframe>
+                          src="https://player.vimeo.com/video/721799699?h=b659979974?background=1&amp;autoplay=1&amp;muted=1&amp;loop=1&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                          frameBorder="0"
+                          className={styles.videomobile}
+                          allow="autoplay; fullscreen; picture-in-picture; loop=1; muted=1"
+                          id="video"
+                          muted
+                          webkitallowfullscreen
+                          mozallowfullscreen
+                          allowFullScreen
+                          title="fixed metaverse"
+                        ></iframe>
                 {/* <div class="plyr__captions"></div> */}
                 {/* </div> */}
-              </div>
+              {/* </div> */}
 
+              </div>
               </div>
 
             </div>
@@ -218,8 +225,8 @@ export default function Home({ posts }) {
                 <p className="px-1 ">Archive</p>
                 <div className="px-1">
                   {/* <ul className="list-none font-light text-center" > */}
-                  <p className="  text-left ">Contact me :)</p>
-                      <a className=" pt-3  " href="mailto:xinyu.c.contact@gmail.com" data-location="internal">
+                  <p className="  text-center ">Contact me :)</p>
+                      <a className=" pt-3  text-center" href="mailto:xinyu.c.contact@gmail.com" data-location="internal">
               xinyu.c.contact@gmail.com
             </a>         
             <div className=" p-3 "></div>    <div></div>            
@@ -557,6 +564,7 @@ export default function Home({ posts }) {
 <footer className={styles.footer}>
                 <div className=" pb-20 inline-grid grid-cols-2">
                   <p className="px-1 ">Archive</p>
+              
                   <div className="px-1">
                     <ul className="list-none font-light text-left">
                       <p className="  text-left ">Contact me :)</p>

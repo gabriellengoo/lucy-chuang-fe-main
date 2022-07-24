@@ -95,6 +95,7 @@ test theory
   -webkit-filter: drop-shadow(0rem .5rem 1rem crimson);
           filter: drop-shadow(0rem .5rem 1rem crimson);
   pointer-events: none;
+  mix-blend-mode: lighten;
 }
 
 .figurencontmobile {
@@ -117,6 +118,7 @@ test theory
   -webkit-filter: drop-shadow(0rem .5rem 1rem crimson);
           filter: drop-shadow(0rem .5rem 1rem crimson);
   pointer-events: none;
+
 }
 
 
@@ -261,7 +263,7 @@ test theory
 /* you dont need */
 .wrapper > div:nth-child(4) {
   position: absolute;
-  top: 510vh;
+  top: 540vh;
   left: 45vw;
   width: 30%;
   -webkit-transform: rotate(345deg);
@@ -309,6 +311,11 @@ test theory
   width: 60%;
 }
 
+
+.wrapper > div:nth-child(5) > img:nth-child(1){
+  position: relative;
+  top: 5vh;
+}
 
 .wrapper > div:nth-child(5) > p:nth-child(2) {
   position: absolute;
@@ -1093,15 +1100,7 @@ position: absolute;
 
 
 
-.fontstylemobile{
-  font-weight: 300;
-font-family: serif;
-font-style: italic;
-text-decoration: underline;
-font-size: 67px; font-size: calc(40px + 0.390625vw);
-z-index: 200;
-color: #f6f6f6;
-}
+
 
 .fontstyle{
 font-weight: 300;
@@ -2274,12 +2273,103 @@ text-decoration-thickness: 1px;
 
 /* -----------------mobile ------------------------ */
 
+.mainmobile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  /* overflow-x:hidden;
+  position: absolute; */
+}
+
+.feedmobile > div:nth-child(1) {
+ position: absolute;
+ top: 75vh;
+}
+
+.feedmobile > div:nth-child(2) {
+ position: absolute;
+ top: 130vh;
+}
+
+
+.feedmobile > div:nth-child(3) {
+ position: absolute;
+ top: 210vh;
+}
+
+
+.feedmobile > div:nth-child(4) {
+  padding-top: 43vh;
+  position: absolute;
+  top: 280vh;
+}
+
+
+.feedmobile > div:nth-child(5) {
+  position: absolute;
+  top: 390vh;
+}
+
+.feedmobile > div:nth-child(6) {
+  position: absolute;
+  top: 490vh;
+}
+
+/* .feedmobile > div:nth-child(7) {
+  position: absolute;
+  top: 700vh;
+} */
+
+
+  /* blue head */
+  .feedmobile > div:nth-child(8) {
+    position: absolute;
+    /* bottom:0px;  */
+    top: 595vh;
+    left: -32px;
+    padding-bottom: 14vh;
+
+  }
+
+
+  .feedmobile > div:nth-child(8) > img:nth-child(1) {
+    animation: none !important;
+    -webkit-animation: none !important;
+  }
+
+  .feedmobile > div:nth-child(8) > div:nth-child(2) p:nth-child(1) {
+    display: none;
+  }
+  
+
+  .videomobile{
+    position: absolute;
+    top: 520vh;
+    width: 100vw;
+    display: unset;
+    height: 100vh;
+    /* left: -32px; */
+    /* padding-bottom: 18vh; */
+  }
+
+
+  .videomobilecont{
+    height: 100vh;
+    /* left: -32px; */
+    /* padding-bottom: 18vh; */
+  }
+
+
 .feedmobile {
   display: flex;
   align-items: center;
   flex-direction: column;
   z-index: 100;
-  padding-top: 15vh;
+  padding-top: 20vh;
   width: 100vw;
   position: relative;
 }
@@ -2383,8 +2473,18 @@ mix-blend-mode: exclusion;
     transition: 0.2s;
   }
 
+  .fontstylemobile{
+    font-weight: 300;
+  font-family: serif;
+  font-style: italic;
+  text-decoration: underline;
+  font-size: 67px; font-size: calc(25px + 0.390625vw);
+  z-index: 200;
+  color: #f6f6f6;
+  }
 
 
+ 
 
 
 
@@ -2462,7 +2562,10 @@ z-index: 400;
 
 
 /*  shooting not so  */
-
+.wrapper > div:nth-child(5) > img:nth-child(1){
+  position: relative;
+  top: 5vh;
+}
 .wrapper > div:nth-child(5) > p:nth-child(2) {
   top: 95vh;
   left: 32vw;
@@ -2478,7 +2581,7 @@ z-index: 400;
   left: 0vw;
   -webkit-filter: drop-shadow(0rem 0rem .5rem rgb(255, 255, 255));
           filter: drop-shadow(0rem 0rem .5rem rgb(255, 255, 255));
-  top: 250vh;
+  top: 275vh;
   -webkit-animation: glitter 5s infinite;
           animation: glitter 5s infinite;
 }
@@ -2493,7 +2596,7 @@ z-index: 400;
   left: 0vw;
   -webkit-filter: drop-shadow(0rem 0rem .5rem rgb(255, 255, 255));
           filter: drop-shadow(0rem 0rem .5rem rgb(255, 255, 255));
-  top: 280vh;
+  top: 275vh;
   -webkit-animation: glitter 5s infinite;
           animation: glitter 5s infinite;
 }
