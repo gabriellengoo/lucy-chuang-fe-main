@@ -2583,7 +2583,66 @@ mix-blend-mode: exclusion;
   }
 
 
+  @media all and (device-width: 1366px) and (device-height: 1024px) and (orientation:landscape) {
+    .logomoblie{
+      z-index: 10000 !important;
+        width: 20%;
+        position: fixed;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        filter: drop-shadow(0rem 0rem 0.5rem rgb(255, 255, 255));
+        padding-top: 50px;
+    }
+    
+    
+    .videomobile{
+      position: absolute;
+        top: 555vh;
+        width: 100vw;
+        display: unset;
+        height: 100vh;
+    }
+    
+    
+    .feedmobile > div:nth-child(8) {
+      position: absolute;
+      top: 630vh;
+      left: -32px;
+      padding-bottom: 14vh;
+    } 
+  }
 
+
+  @media all and (device-width: 907px) and (device-height: 642px) and (orientation:landscape) {
+    .logomoblie{
+      z-index: 10000 !important;
+        width: 20%;
+        position: fixed;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        filter: drop-shadow(0rem 0rem 0.5rem rgb(255, 255, 255));
+        padding-top: 50px;
+    }
+    
+    
+    .videomobile{
+      position: absolute;
+        top: 555vh;
+        width: 100vw;
+        display: unset;
+        height: 100vh;
+    }
+    
+    
+    .feedmobile > div:nth-child(8) {
+      position: absolute;
+      top: 630vh;
+      left: -32px;
+      padding-bottom: 14vh;
+    } 
+  }
 
 
 
